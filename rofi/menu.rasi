@@ -1,0 +1,85 @@
+configuration {
+	display-drun: "";
+	display-run: "";
+	display-window: "";
+	display-ssh: "~#";
+	show-icons: true;
+	sidebar-mode: false;
+	font: "Source Code Pro 15";
+}
+
+* {
+  accent:           #AC9B91;
+/*  background:       #0F1215ee; */
+  background-light: #AC9B91;
+  background-light-alpha: #dbd1c911;
+  background-focus: #0F1215;
+  foreground:       #dbd1c9;
+  foreground-list:  #0F1215;
+  on:               #44ad4d;
+	off:              #e34039;
+	background-color: #00000000;
+  text-color: @foreground-list;
+	inputbar-margin:                      4px 4px;
+	prompt-padding:                       16px 20px;
+	apps-textbox-prompt-colon-padding:    16px;
+	entry-padding:                        18px 16px 16px 0px;
+	list-element-padding:                 20px;
+  list-element-margin:                  @inputbar-margin;
+}
+
+window {
+  width: 100%;
+  height: 100%;
+/*	list-8-window-padding:                180px 560px; */
+  padding: 415px 183px;
+}
+inputbar,
+prompt,
+textbox-prompt-colon,
+listview {
+	spacing: 0.6em;
+	dynamic: false;
+	cycle: true;
+	padding: 0px 5px 0px 5px;
+}
+entry {
+  background-color: #00000000;
+  border-radius: 20px;
+  text-color: @background-light;
+}
+#inputbar {
+  children: [ prompt, textbox-prompt-colon, entry ];
+  margin: @inputbar-margin;
+  border-radius: 20px;
+  text-color: @background-light;
+}
+#prompt {
+  padding: @prompt-padding;
+  background-color: #00000000;
+  text-color: @background-light;
+}
+#textbox-prompt-colon {
+  expand: false;
+  str: "  : :  ";
+  text-color: @background-light;
+  padding: @apps-textbox-prompt-colon-padding;
+}
+#entry {
+  text-color: @background-light;
+  padding: @entry-padding;
+}
+#element {
+  padding: @list-element-padding;
+  margin: @list-element-margin;
+  /*border: @list-element-border;*/
+  background-color: #00000000;
+  border-color: @background-light;
+  border-radius: 20px;
+  text-color: @foreground;
+}
+#element.selected {
+  text-color: @background-light;
+  background-color: @background-light-alpha;
+}
+
