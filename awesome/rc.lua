@@ -11,13 +11,10 @@
 --]]
 
 -- Autorun
-autorun = true
-autorunApps = {
-   "main_display_layout.sh",
-   "numlockx",
-   "picom &",
-   "xfce4-power-manager &",
-}
+--autorun = true
+--autorunApps = {
+--   "main_display_layout.sh",
+--}
 
 local themes = {
     "manta",        -- 1 --
@@ -78,7 +75,7 @@ local exit_screen_themes = {
     "lovelace",      -- 1 -- Uses image icons
     "ephemeral",     -- 2 -- Uses text-generated icons (consumes less RAM)
 }
-local exit_screen_theme = exit_screen_themes[2]
+local exit_screen_theme = exit_screen_themes[1]
 -- ===================================================================
 -- User variables and preferences
 user = {
@@ -111,11 +108,13 @@ user = {
         screenshots = os.getenv("XDG_SCREENSHOTS_DIR") or "~/Pictures/Screenshots",
     },
 
+
     -- >> Sidebar <<
     sidebar = {
-        hide_on_mouse_leave = true,
-        show_on_mouse_screen_edge = true,
+        hide_on_mouse_leave = false,
+        show_on_mouse_screen_edge = false,
     },
+
 
     -- >> Lock screen <<
     -- This password will ONLY be used if you have not installed
@@ -232,8 +231,6 @@ require("elemental.dashboard."..dashboard_theme)
 -- custom password in the 'user' section above
 local lock_screen = require("elemental.lock_screen")
 lock_screen.init()
--- App drawer
-require("elemental.app_drawer")
 -- Window switcher
 require("elemental.window_switcher")
 -- Toggle-able microphone overlay
@@ -249,11 +246,13 @@ require("evil")
 
 -- Autorun Apps
 
-if autorun then
-   for app = 1, #autorunApps do
-       awful.util.spawn(autorunApps[app])
-   end
-end
+--if autorun then
+--   for app = 1, #autorunApps do
+--       awful.util.spawn(autorunApps[app])
+--   end
+--end
+
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
 -- Get screen geometry
 -- I am using a single screen setup and I assume that screen geometry will not
@@ -388,7 +387,7 @@ awful.rules.rules = {
             honor_workarea = true,
             honor_padding = true,
             maximized = false,
-            titlebars_enabled = beautiful.titlebars_enabled,
+            titlebars_enabled = false,
             maximized_horizontal = false,
             maximized_vertical = false,
             placement = floating_client_placement

@@ -56,8 +56,8 @@ keys.desktopbuttons = gears.table.join(
     end),
 
     -- Scrolling - Switch tags
-    awful.button({ }, 4, awful.tag.viewprev),
-    awful.button({ }, 5, awful.tag.viewnext),
+--    awful.button({ }, 4, awful.tag.viewprev),
+--    awful.button({ }, 5, awful.tag.viewnext),
 
     -- Side buttons - Control volume
     awful.button({ }, 9, function () helpers.volume_control(5) end),
@@ -324,26 +324,7 @@ keys.globalkeys = gears.table.join(
         end,
         {description = "rofi launcher", group = "launcher"}),
 
-    -- Run
-    awful.key({ superkey }, "r",
-        function ()
-            -- Not all sidebars have a prompt
-            if sidebar_activate_prompt then
-                sidebar_activate_prompt("run")
-            end
-        end,
-        {description = "activate sidebar run prompt", group = "awesome"}),
-    -- Web search
-    awful.key({ superkey }, "g",
-        function ()
-            -- Not all sidebars have a prompt
-            if sidebar_activate_prompt then
-                sidebar_activate_prompt("web_search")
-            end
-        end,
-        {description = "activate sidebar web search prompt", group = "awesome"}),
-
-    -- Dismiss notifications and elements that connect to the dismiss signal
+     -- Dismiss notifications and elements that connect to the dismiss signal
     awful.key( { ctrlkey }, "space",
         function()
             awesome.emit_signal("elemental::dismiss")
@@ -355,53 +336,7 @@ keys.globalkeys = gears.table.join(
     --awful.key({ superkey, ctrlkey }, "b", function() menubar.show() end,
     --{description = "show the menubar", group = "launcher"}),
 
-    -- Brightness
-    awful.key( { }, "XF86MonBrightnessDown",
-        function()
-            awful.spawn.with_shell("light -U 10")
-        end,
-        {description = "decrease brightness", group = "brightness"}),
-    awful.key( { }, "XF86MonBrightnessUp",
-        function()
-            awful.spawn.with_shell("light -A 10")
-        end,
-        {description = "increase brightness", group = "brightness"}),
-
-    -- Volume Control with volume keys
-    awful.key( { }, "XF86AudioMute",
-        function()
-            helpers.volume_control(0)
-        end,
-        {description = "(un)mute volume", group = "volume"}),
-    awful.key( { }, "XF86AudioLowerVolume",
-        function()
-            helpers.volume_control(-5)
-        end,
-        {description = "lower volume", group = "volume"}),
-    awful.key( { }, "XF86AudioRaiseVolume",
-        function()
-            helpers.volume_control(5)
-        end,
-        {description = "raise volume", group = "volume"}),
-
-    -- Volume Control with alt+F1/F2/F3
-    awful.key( { altkey }, "F1",
-        function()
-            helpers.volume_control(0)
-        end,
-        {description = "(un)mute volume", group = "volume"}),
-    awful.key( { altkey }, "F2",
-        function()
-            helpers.volume_control(-5)
-        end,
-        {description = "lower volume", group = "volume"}),
-    awful.key( { altkey }, "F3",
-        function()
-            helpers.volume_control(5)
-        end,
-        {description = "raise volume", group = "volume"}),
-
-    -- Screenkey toggle
+     -- Screenkey toggle
     awful.key( { superkey }, "F12", apps.screenkey,
         {description = "raise volume", group = "volume"}),
 
@@ -419,49 +354,10 @@ keys.globalkeys = gears.table.join(
         end,
         {description = "toggle microphone overlay", group = "volume"}),
 
-    -- Screenshots
-    awful.key( { }, "Print", function() apps.screenshot("full") end,
-        {description = "take full screenshot", group = "screenshots"}),
-    awful.key( { superkey, shiftkey }, "c", function() apps.screenshot("selection") end,
-        {description = "select area to capture", group = "screenshots"}),
-    awful.key( { superkey, ctrlkey }, "c", function() apps.screenshot("clipboard") end,
-        {description = "select area to copy to clipboard", group = "screenshots"}),
-    awful.key( { superkey }, "Print", function() apps.screenshot("browse") end,
-        {description = "browse screenshots", group = "screenshots"}),
-    awful.key( { superkey, shiftkey }, "Print", function() apps.screenshot("gimp") end,
-        {description = "edit most recent screenshot with gimp", group = "screenshots"}),
-    -- Toggle tray visibility
-    awful.key({ superkey }, "=",
-        function ()
-            tray_toggle()
-        end,
-        {description = "toggle tray visibility", group = "awesome"}),
-    -- Media keys
-    awful.key({ superkey }, "period", function() awful.spawn.with_shell("mpc -q next") end,
-        {description = "next song", group = "media"}),
-    awful.key({ superkey }, "comma", function() awful.spawn.with_shell("mpc -q prev") end,
-        {description = "previous song", group = "media"}),
-    awful.key({ superkey }, "space", function() awful.spawn.with_shell("mpc -q toggle") end,
-        {description = "toggle pause/play", group = "media"}),
-    awful.key({ superkey, shiftkey }, "period", function() awful.spawn.with_shell("mpvc next") end,
-        {description = "mpv next song", group = "media"}),
-    awful.key({ superkey, shiftkey }, "comma", function() awful.spawn.with_shell("mpvc prev") end,
-        {description = "mpv previous song", group = "media"}),
-    awful.key({ superkey, shiftkey}, "space", function() awful.spawn.with_shell("mpvc toggle") end,
-        {description = "mpv toggle pause/play", group = "media"}),
-
-    awful.key({ superkey }, "F8", function() awful.spawn.with_shell("mpvc quit") end,
-        {description = "mpv quit", group = "media"}),
-    awful.key({ superkey }, "F7", function() awful.spawn.with_shell("freeze firefox") end,
-        {description = "send STOP signal to all firefox processes", group = "other"}),
-    awful.key({ superkey, shiftkey }, "F7", function() awful.spawn.with_shell("freeze -u firefox") end,
-        {description = "send CONT signal to all firefox processes", group = "other"}),
-    awful.key({ superkey }, "q", function() apps.scratchpad() end,
-        {description = "scratchpad", group = "launcher"}),
     -- Max layout
     -- Single tap: Set max layout
     -- Double tap: Also disable floating for ALL visible clients in the tag
-    awful.key({ superkey }, "w",
+    awful.key({ superkey }, "m",
         function()
             awful.layout.set(awful.layout.suit.max)
             helpers.single_double_tap(
@@ -477,7 +373,7 @@ keys.globalkeys = gears.table.join(
     -- Tiling
     -- Single tap: Set tiled layout
     -- Double tap: Also disable floating for ALL visible clients in the tag
-    awful.key({ superkey }, "s",
+    awful.key({ superkey }, "t",
         function()
             awful.layout.set(awful.layout.suit.tile)
             helpers.single_double_tap(
@@ -491,7 +387,7 @@ keys.globalkeys = gears.table.join(
         end,
         {description = "set tiled layout", group = "tag"}),
     -- Set floating layout
-    awful.key({ superkey, shiftkey }, "s", function()
+    awful.key({ superkey, shiftkey }, "t", function()
         awful.layout.set(awful.layout.suit.floating)
                                            end,
         {description = "set floating layout", group = "tag"}),
@@ -503,65 +399,22 @@ keys.globalkeys = gears.table.join(
         -- rofi_show()
     end, {description = "dashboard", group = "custom"}),
 
-    -- App drawer
-    awful.key({ superkey }, "a", function()
-        app_drawer_show()
-                                 end,
-        {description = "App drawer", group = "custom"}),
-
     -- Pomodoro timer
     awful.key({ superkey }, "slash", function()
         awful.spawn.with_shell("pomodoro")
                                      end,
-        {description = "pomodoro", group = "launcher"}),
-    -- Spawn file manager
-    awful.key({ superkey }, "F2", apps.file_manager,
-        {description = "file manager", group = "launcher"}),
-    -- Spawn music client
-    awful.key({ superkey }, "F3", apps.music,
-        {description = "music client", group = "launcher"}),
-    -- Spawn cava in a terminal
-    awful.key({ superkey }, "F4", function() awful.spawn("visualizer") end,
-        {description = "cava", group = "launcher"}),
-    -- Spawn ncmpcpp in a terminal, with a special visualizer config
-    awful.key({ superkey, shiftkey }, "F4", function() awful.spawn(user.terminal .. " -e 'ncmpcpp -c ~/.config/ncmpcpp/config_visualizer -s visualizer'") end,
-        {description = "ncmpcpp", group = "launcher"}),
-    -- Network dialog: nmapplet rofi frontend
-    awful.key({ superkey }, "F11", function() awful.spawn("networks-rofi") end,
-        {description = "spawn network dialog", group = "launcher"}),
-    -- Toggle sidebar
-    awful.key({ superkey }, "grave", function() sidebar_toggle() end,
-        {description = "show or hide sidebar", group = "awesome"}),
-    -- Toggle wibar(s)
-    awful.key({ superkey }, "b", function() wibars_toggle() end,
-        {description = "show or hide wibar(s)", group = "awesome"}),
-    -- Emacs (O for org mode)
-    awful.key({ superkey }, "o", apps.org,
-        {description = "emacs", group = "launcher"}),
-    -- Markdown input scratchpad (I for input)
-    -- For quickly typing markdown comments and pasting them in
-    -- the browser
-    awful.key({ superkey }, "i", apps.markdown_input,
-        {description = "markdown scratchpad", group = "launcher"}),
-    -- Editor
-    awful.key({ superkey }, "e", apps.editor,
-        {description = "editor", group = "launcher"}),
-    -- Quick edit file
-    awful.key({ superkey, shiftkey }, "e",
-        function()
-            awful.spawn.with_shell("rofi_edit")
-        end,
-        {description = "quick edit file", group = "launcher"}),
-    -- Rofi youtube search and playlist selector
-    awful.key({ superkey }, "y", apps.youtube,
-        {description = "youtube search and play", group = "launcher"}),
-    -- Spawn file manager
-    awful.key({ superkey, shiftkey }, "f", apps.file_manager,
-        {description = "file manager", group = "launcher"}),
-    -- Process monitor
-    awful.key({ superkey }, "p", apps.process_monitor,
-        {description = "process monitor", group = "launcher"})
+        {description = "pomodoro", group = "launcher"})
 )
+   -- Rofi youtube search and playlist selector
+--    awful.key({ superkey }, "y", apps.youtube,
+--        {description = "youtube search and play", group = "launcher"}),
+--    -- Spawn file manager
+--    awful.key({ superkey, shiftkey }, "f", apps.file_manager,
+--        {description = "file manager", group = "launcher"}),
+--    -- Process monitor
+--    awful.key({ superkey }, "p", apps.process_monitor,
+--        {description = "process monitor", group = "launcher"})
+
 
 keys.clientkeys = gears.table.join(
     -- Move to edge or swap by direction
@@ -627,22 +480,6 @@ keys.clientkeys = gears.table.join(
         c:relative_move(dpi( 20), 0, 0, 0)
     end),
 
-    -- Toggle titlebars (for focused client only)
-    awful.key({ superkey,           }, "t",
-        function (c)
-            decorations.cycle(c)
-        end,
-        {description = "toggle titlebar", group = "client"}),
-    -- Toggle titlebars (for all visible clients in selected tag)
-    awful.key({ superkey, shiftkey }, "t",
-        function (c)
-            local clients = awful.screen.focused().clients
-            for _, c in pairs(clients) do
-                decorations.cycle(c)
-            end
-        end,
-        {description = "toggle titlebar", group = "client"}),
-
     -- Toggle fullscreen
     awful.key({ superkey,           }, "f",
         function (c)
@@ -696,17 +533,6 @@ keys.clientkeys = gears.table.join(
     awful.key({ superkey, ctrlkey }, "Return", function (c) c:swap(awful.client.getmaster()) end,
         {description = "move to master", group = "client"}),
 
-    -- Change client opacity
-    awful.key({ ctrlkey, superkey }, "o",
-        function (c)
-            c.opacity = c.opacity - 0.1
-        end,
-        {description = "decrease client opacity", group = "client"}),
-    awful.key({ superkey, shiftkey }, "o",
-        function (c)
-            c.opacity = c.opacity + 0.1
-        end,
-        {description = "increase client opacity", group = "client"}),
 
     -- P for pin: keep on top OR sticky
     -- On top
@@ -753,13 +579,13 @@ for i = 1, ntags do
         awful.key({ superkey }, "#" .. i + 9,
             function ()
                 -- Tag back and forth
-                helpers.tag_back_and_forth(i)
+                 --helpers.tag_back_and_forth(i)
 
                 -- Simple tag view
-                -- local tag = mouse.screen.tags[i]
-                -- if tag then
-                -- tag:view_only()
-                -- end
+                 local tag = mouse.screen.tags[i]
+                 if tag then
+                 tag:view_only()
+                 end
             end,
             {description = "view tag #"..i, group = "tag"}),
         -- Toggle tag display.
@@ -875,8 +701,8 @@ keys.tasklist_buttons = gears.table.join(
 -- Mouse buttons on a tag of the taglist widget
 keys.taglist_buttons = gears.table.join(
     awful.button({ }, 1, function(t)
-        -- t:view_only()
-        helpers.tag_back_and_forth(t.index)
+         t:view_only()
+        --client.focus:tag(t.index)
     end),
     awful.button({ superkey }, 1, function(t)
         if client.focus then
