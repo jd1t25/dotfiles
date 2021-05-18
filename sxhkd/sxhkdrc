@@ -1,0 +1,15 @@
+# Restart Sxhkd
+
+alt + Escape
+	pkill -USR1 -x sxhkd
+
+
+
+
+# Browsers
+
+alt + c 
+	google-chrome-stable --incognito
+
+alt + b
+	brave
