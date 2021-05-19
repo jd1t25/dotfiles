@@ -427,7 +427,10 @@ awful.rules.rules = {
                 "dialog",
             }
         },
-        properties = { floating = true }
+        properties = { floating = true },
+        callback = function(c)
+            decorations.show(c)
+        end
     },
 
     -- TODO why does Chromium always start up floating in AwesomeWM?
@@ -686,21 +689,21 @@ awful.rules.rules = {
     },
 
     -- Music clients (usually a terminal running ncmpcpp)
-    {
-        rule_any = {
-            class = {
-                "music",
-            },
-            instance = {
-                "music",
-            },
-        },
-        properties = {
-            floating = true,
-            width = screen_width * 0.45,
-            height = screen_height * 0.50
-        },
-    },
+--    {
+--        rule_any = {
+--            class = {
+--                "music",
+--            },
+--            instance = {
+--                "music",
+--            },
+--        },
+--        properties = {
+--            floating = true,
+--            width = screen_width * 0.45,
+--            height = screen_height * 0.50
+--        },
+--    },
 
     -- Image viewers
     {

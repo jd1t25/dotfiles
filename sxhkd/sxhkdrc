@@ -19,6 +19,12 @@ alt + b
 	brave
 
 
+# Music Player
+
+alt + m
+	music_terminal
+
+
 ### Volume
 # Volume Up
 # (xev shows PageUp as Prior)
