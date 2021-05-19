@@ -1,15 +1,71 @@
 # Restart Sxhkd
-
 alt + Escape
 	pkill -USR1 -x sxhkd
 
 
+# File Manager
+super + e
+	nautilus
 
 
 # Browsers
+alt + f 
+	firefox
 
 alt + c 
 	google-chrome-stable --incognito
 
 alt + b
 	brave
+
+
+### Volume
+# Volume Up
+# (xev shows PageUp as Prior)
+super + Prior
+	pulsemixer --change-volume +2 --max-volume 100
+#	amixer -q -D pulse sset Master 2%+
+
+# Volume Down
+# (xev shows PageDown as Next)
+super + Next
+	pulsemixer --change-volume -2 --max-volume 100
+#amixer -q -D pulse sset Master 2%-
+
+### Play / Pause
+super + Insert
+	playerctl play-pause
+
+### Stop
+super + Delete
+	playerctl stop
+
+### Next
+super + Home
+	playerctl next
+
+### Previous
+super + End
+	playerctl previous
+
+### Screenshot
+super + Print
+	scrot %F-%H-%M-%S -e 'mv $f ~/Screenshots/'
+
+### Shutdown,Reboot,Halt
+ctrl + shift + alt + {r,p,h,s}
+	systemctl {reboot,poweroff,halt,suspend}
+
+### Refresh
+#super + F5
+#	./.config/scripts/refresh.sh
+
+### Audio Switch
+super + Pause
+	./bin/audio-switcher.sh
+
+# Toggle Picom
+alt + F1
+	./bin/toggle_picom.sh
+
+
