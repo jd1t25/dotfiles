@@ -20,9 +20,17 @@ alt + b
 
 
 # Music Player
-
 alt + m
 	music_terminal
+
+# Lofi Yt
+alt + l
+	lofi.sh
+
+
+# Audio/Sound Settings
+super + F12
+	kitty -1 --class pulsemixer -e pulsemixer
 
 
 ### Volume

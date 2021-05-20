@@ -337,8 +337,8 @@ keys.globalkeys = gears.table.join(
     --{description = "show the menubar", group = "launcher"}),
 
      -- Screenkey toggle
-    awful.key( { superkey }, "F12", apps.screenkey,
-        {description = "raise volume", group = "volume"}),
+    awful.key( { superkey }, "F9", apps.screenkey,
+        {description = "ScreenKey", group = "volume"}),
 
     -- Microphone (V for voice)
     awful.key( { superkey }, "v",

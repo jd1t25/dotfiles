@@ -705,6 +705,24 @@ awful.rules.rules = {
 --        },
 --    },
 
+
+    -- Pulsemixer (Audio/Sound Control)
+    {
+        rule_any = {
+            class = {
+                "pulsemixer",
+            },
+            instance = {
+                "pulsemixer",
+            },
+        },
+        properties = {
+            floating = true,
+            width = screen_width * 0.70,
+            height = screen_height * 0.60
+        },
+    },
+
     -- Image viewers
     {
         rule_any = {
