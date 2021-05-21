@@ -1,30 +1,36 @@
 # Restart Sxhkd
 alt + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd; notify-send "Sxhkd Updated"
 
 
 # File Manager
 super + e
+	notify-send "Opening Nautilus"; \
 	nautilus
 
 
 # Browsers
-alt + f 
+alt + f
+	notify-send "Opening Firefox"; \
 	firefox
 
 alt + c 
+	notify-send "Opening Chrome"; \
 	google-chrome-stable --incognito
 
 alt + b
+	notify-send "Opening Brave"; \
 	brave
 
 
 # Music Player
 alt + m
+	notify-send "Opening Music Player"; \
 	music_terminal
 
 # Lofi Yt
 alt + l
+	notify-send "Opening Browser Player"; \
 	lofi.sh
 
 
@@ -64,6 +70,7 @@ super + End
 
 ### Screenshot
 super + Print
+	notify-send "Screenshot Taken"; \
 	scrot %F-%H-%M-%S -e 'mv $f ~/Screenshots/'
 
 ### Shutdown,Reboot,Halt
