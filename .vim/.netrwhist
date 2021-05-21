@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/etc/profile.d'
+let g:netrw_dirhist_5='/home/jd1t/dotfiles/sxhkd'
+let g:netrw_dirhist_4='/home/jd1t/.config/awesome/elemental'
+let g:netrw_dirhist_3='/home/jd1t/.config/awesome/evil'
+let g:netrw_dirhist_2='/home/jd1t/Downloads/dotfiles/misc/homepages/jared-startpage-EDITED'
+let g:netrw_dirhist_1='/home/jd1t/.config'
