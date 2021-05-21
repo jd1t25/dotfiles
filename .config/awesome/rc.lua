@@ -321,7 +321,7 @@ awful.screen.connect_for_each_screen(function(s)
     local l = awful.layout.suit -- Alias to save time :)
     -- Tag layouts
     local layouts = {
-        l.max,
+        l.tile,
         l.max,
         l.max,
         l.max,
@@ -830,28 +830,84 @@ awful.rules.rules = {
         end
     },
 
-    -- League of Legends client QoL fixes
-    {
-        rule = { instance = "league of legends.exe" },
-        properties = {},
-        callback = function (c)
-            local matcher = function (c)
-                return awful.rules.match(c, { instance = "leagueclientux.exe" })
-            end
-            -- Minimize LoL client after game window opens
-            for c in awful.client.iterate(matcher) do
-                c.urgent = false
-                c.minimized = true
-            end
 
-            -- Unminimize LoL client after game window closes
-            c:connect_signal("unmanage", function()
-                for c in awful.client.iterate(matcher) do
-                    c.minimized = false
-                end
-            end)
-        end
+-- Start Application on Specific Workspace --
+
+ -- Browsers
+    {
+        rule_any = {
+            class = {
+                "firefox"
+            },
+            instance = {
+                "firefox"
+            }
+        },
+        properties = { screen = 1, tag = awful.screen.focused().tags[2] }
     },
+
+    {
+        rule_any = {
+            class = {
+                "chromium",
+                "brave"
+            },
+            instance = {
+                "chromium",
+                "brave"
+            }
+        },
+        properties = { screen = 1, tag = awful.screen.focused().tags[10] }
+    },
+
+
+  -- Qbittorrent
+    {
+        rule_any = {
+            class = {
+                "qbittorrent"
+            },
+       },
+        properties = { screen = 1, tag = awful.screen.focused().tags[8] }
+    },
+
+
+  -- File Browsers
+        {
+        rule_any = {
+            class = {
+                "org.gnome.Nautilus"
+            },
+       },
+        properties = { screen = 1, tag = awful.screen.focused().tags[4] }
+    },
+
+
+  -- Telegram-Desktop
+    {
+        rule_any = {
+            class = {
+                "telegram-desktop"
+            },
+       },
+        properties = { screen = 1, tag = awful.screen.focused().tags[9] }
+    },
+
+ -- Music
+    {
+        rule_any = {
+            class = {
+                "m_on_browser",
+                "music"
+            },
+            instance = {
+                "m_on_browser",
+                "music"
+            }
+        },
+        properties = { screen = 1, tag = awful.screen.focused().tags[10] }
+    },
+
 
  -- Start Application on Specific Workspace --
 
