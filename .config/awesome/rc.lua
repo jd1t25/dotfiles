@@ -857,7 +857,7 @@ awful.rules.rules = {
                 "brave"
             }
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[10] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[4] }
     },
 
 
