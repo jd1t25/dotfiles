@@ -1,6 +1,6 @@
 # Restart Sxhkd
 alt + Escape
-	pkill -USR1 -x sxhkd; notify-send "Sxhkd Updated"
+	pkill -USR1 -x sxhkd; notify-send "SXHKD Updated"
 
 
 # File Manager
@@ -73,9 +73,30 @@ super + Print
 	notify-send "Screenshot Taken"; \
 	scrot %F-%H-%M-%S -e 'mv $f ~/Screenshots/'
 
-### Shutdown,Reboot,Halt
-ctrl + shift + alt + {r,p,h,s}
-	systemctl {reboot,poweroff,halt,suspend}
+# Reboot
+ctrl + shift + alt + r
+	notify-send "Rebooting in 3"; \
+	sleep 3s; \
+	systemctl reboot
+
+# Poweroff/Shutdown
+ctrl + shift + alt + p
+	notify-send "Shutdown in 3"; \
+	sleep 3s; \
+	systemctl poweroff
+
+# Halt
+ctrl + shift + alt + h
+	notify-send "Halting in 3"; \
+	sleep 3s; \
+	systemctl halt
+
+# Suspend
+ctrl + shift + alt + s
+	notify-send "Suspend in 3"; \
+	sleep 3s; \
+	systemctl suspend 
+
 
 ### Refresh
 #super + F5
