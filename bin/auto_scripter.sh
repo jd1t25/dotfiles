@@ -1,6 +1,6 @@
 #! /bin/bash
 
-FOLDER=".bin"
+FOLDER="bin"
 NAME=${1?Error: No name given to file}
 FILE="$FOLDER/$NAME.sh"
 
