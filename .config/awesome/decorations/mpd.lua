@@ -2,7 +2,7 @@ local gears = require("gears")
 local awful = require("awful")
 local wibox = require("wibox")
 local helpers = require("helpers")
-local notifications = require("notifications")
+--local notifications = require("notifications")
 local keys = require("keys")
 
 local create_little_circle = function(color)
@@ -223,14 +223,14 @@ awesome.connect_signal("evil::mpd_options", function(loop, random)
     end
 end) 
 
-local notifications_color = x.color2
-local notifications_symbol = ""
-local notifications_button
-notifications_button = control_button(c, notifications_symbol, notifications.mpd.enabled and notifications_color or disabled_color, dpi(30), function()
-    notifications.mpd.toggle()
-    local text = notifications_button:get_all_children()[1]:get_all_children()[1]
-    text.markup = helpers.colorize_text(notifications_symbol, notifications.mpd.enabled and notifications_color or disabled_color)
-end)
+--local notifications_color = x.color2
+--local notifications_symbol = ""
+--local notifications_button
+--notifications_button = control_button(c, notifications_symbol, notifications.mpd.enabled and notifications_color or disabled_color, dpi(30), function()
+--    notifications.mpd.toggle()
+--    local text = notifications_button:get_all_children()[1]:get_all_children()[1]
+--    text.markup = helpers.colorize_text(notifications_symbol, notifications.mpd.enabled and notifications_color or disabled_color)
+--end)
 
 local main_titlebar_size = dpi(50)
 
@@ -297,7 +297,6 @@ local mpd_create_decoration = function (c)
                     ),
                 random_button,
                 loop_button,
-                notifications_button,
                 layout = wibox.layout.flex.vertical
             },
             {

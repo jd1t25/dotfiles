@@ -57,7 +57,7 @@ local notification_themes = {
     "ephemeral",      -- 2 -- Outlined text icons and a rainbow stripe
     "amarena",        -- 3 -- Filled text icons on the right, text on the left
 }
-local notification_theme = notification_themes[3]
+--local notification_theme = notification_themes[3]
 -- ===================================================================
 local sidebar_themes = {
     "lovelace",       -- 1 -- Uses image icons
@@ -210,7 +210,7 @@ icons.init(icon_theme)
 local keys = require("keys")
 -- Load notification daemons and notification theme
 local notifications = require("notifications")
-notifications.init(notification_theme)
+--notifications.init(notification_theme)
 -- Load window decoration theme and custom decorations
 local decorations = require("decorations")
 decorations.init(decoration_theme)
@@ -849,15 +849,15 @@ awful.rules.rules = {
     {
         rule_any = {
             class = {
-                "chromium",
+                "google-chrome",
                 "brave"
             },
             instance = {
-                "chromium",
+                "google-chrome",
                 "brave"
             }
         },
-        properties = { screen = 1, tag = awful.screen.focused().tags[4] }
+        properties = { screen = 1, tag = awful.screen.focused().tags[3] }
     },
 
 
@@ -865,8 +865,24 @@ awful.rules.rules = {
     {
         rule_any = {
             class = {
-                "qbittorrent"
+                "qBittorrent"
             },
+            instance = {
+                "qbittorent"
+            }
+       },
+        properties = { screen = 1, tag = awful.screen.focused().tags[7] }
+    },
+
+  -- Discord
+     {
+        rule_any = {
+            class = {
+                "discord"
+            },
+            instance = {
+                "discord"
+            }
        },
         properties = { screen = 1, tag = awful.screen.focused().tags[8] }
     },
@@ -876,8 +892,11 @@ awful.rules.rules = {
         {
         rule_any = {
             class = {
-                "org.gnome.Nautilus"
+                "Org.gnome.Nautilus"
             },
+            instance = {
+                "org.gnome.Nautilus"
+            }
        },
         properties = { screen = 1, tag = awful.screen.focused().tags[4] }
     },
@@ -887,8 +906,12 @@ awful.rules.rules = {
     {
         rule_any = {
             class = {
-                "telegram-desktop"
+                "TelegramDesktop"
             },
+            instance = {
+                "telegram-desktop"
+            }
+
        },
         properties = { screen = 1, tag = awful.screen.focused().tags[9] }
     },
