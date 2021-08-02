@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+spotdl $1 -o /mnt/win1/Music
