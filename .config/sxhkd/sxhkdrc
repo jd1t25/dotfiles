@@ -10,26 +10,26 @@ super + e
 
 
 # Browsers
-alt + f
+super + alt + f
 	notify-send "Opening Firefox"; \
 	firefox
 
-alt + c 
-	notify-send "Opening Chrome"; \
-	google-chrome-stable --incognito
+super + alt + c 
+	notify-send "Opening Chromium"; \
+	chromium --incognito
 
-alt + b
+super + alt + b
 	notify-send "Opening Brave"; \
 	brave
 
 
 # Music Player
-alt + m
+super + alt + m
 	notify-send "Opening Music Player"; \
 	music_terminal
 
 # Lofi Yt
-alt + l
+super + alt + l
 	notify-send "Opening Browser Player"; \
 	lofi.sh
 
@@ -71,7 +71,7 @@ super + End
 ### Screenshot
 super + Print
 	notify-send "Screenshot Taken"; \
-	scrot %F-%H-%M-%S -e 'mv $f ~/Screenshots/'
+	scrot %F-%H-%M-%S -e 'mv $f /home/jd1t/Pictures/Screenshots/' -e 'xclip -selection clipboard -target image/png -i $f' 
 
 # Reboot
 ctrl + shift + alt + r
@@ -110,4 +110,10 @@ super + Pause
 alt + F1
 	./bin/toggle_picom.sh
 
+### Task Manager
+ctrl + shift + escape
+	bpytop
 
+# Copyq
+super + c
+	copyq toggle

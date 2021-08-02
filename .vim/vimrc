@@ -1,5 +1,5 @@
 set nocompatible
-  
+
 if has('syntax')
   syntax on
 endif
@@ -70,4 +70,10 @@ call plug#end()
 "####------------------------------------------------------------####
 
 
-vmap y ygv<Esc>
+vnoremap <C-X> "+x
+vnoremap <C-C> "+y
+map <C-V>       "+gP
+"vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
+"noremap <C-C> !xclip -i -sel c<CR><CR>
+"noremap <C-V> !xclip -o -sel c<CR><CR>
+"vmap y ygv<Esc

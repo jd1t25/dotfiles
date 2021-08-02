@@ -44,10 +44,10 @@ export WORDCHARS='.-'
     
 
 #### ColorLs ####
-source $(dirname $(gem which colorls))/tab_complete.sh
-path+=(
-    $(ruby -e 'puts File.join(Gem.user_dir, "bin")')
-)
+#source $(dirname $(gem which colorls))/tab_complete.sh
+#path+=(
+#    $(ruby -e 'puts File.join(Gem.user_dir, "bin")')
+#)
 
 
 #### SpaceShip ####
@@ -57,10 +57,11 @@ SPACESHIP_NODE_SHOW=false
 SPACESHIP_JOBS_SHOW=false
 SPACESHIP_EXEC_TIME_SHOW=false
 
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 #### Aliases ####
 
+alias sx="startx"
 alias szrc="source ~/.zshrc"
 alias zrc="vim ~/.zshrc"
 alias vrc="vim ~/.vim/vimrc"
@@ -70,9 +71,11 @@ alias as="./bin/auto_scripter.sh"
 alias prc="vim ~/.config/picom/picom.conf"
 alias krc="vim ~/.config/kitty/kitty.conf"
 alias arc="vim ~/.config/awesome/rc.lua"
+alias pmx="pulsemixer"
 
-alias lc='colorls -lA --sd'
-alias ls='colorls'
+alias sdl="song_downloader"
+#alias lc='colorls -lA --sd'
+#alias ls='colorls'
 
 # Created by `pipx` on 2021-05-19 06:37:44
 export PATH="$PATH:/home/jd1t/.local/bin"
