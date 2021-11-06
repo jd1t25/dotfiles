@@ -1,3 +1,5 @@
+# vim: set ft=dosini:
+
 ;==========================================================
 ;
 ;
@@ -14,12 +16,17 @@
 [colors]
 background = #00000000
 background-alt = #444
-foreground = #dfdfdf
+foreground = #ffffff
 foreground-alt = #555
 
 focused = #75828a
 occupied = #3f464a
 urgent = #D76E6E
+
+
+;
+; BPSWM
+;
 
 [bar/bspwm]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -61,11 +68,46 @@ label-empty-padding = 2
 label-separator = |
 label-separator-foreground = #00000000
 
+
+;
+;   Bottom
+;
+
+
+[bar/bottom]
+width = 11%
+height = 23 
+fixed-center = true
+
+offset-x = 88%
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = "Goldie Boxing:style=Regular:size=14;1"
+
+modules-left = date
+
+cursor-click = pointer
+
+
+[module/date]
+type = internal/date
+
+interval = 1.0
+
+date = %a  %d %b %C
+time = %I:%M %p
+
+format = <label>
+label = %date%    %time%
+
 [settings]
 screenchange-reload = true
 
 [global/wm]
-margin-top = 1
-margin-bottom = 1
+margin-top = 0
+margin-bottom = 0
 
 
