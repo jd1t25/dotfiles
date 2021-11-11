@@ -3,3 +3,4 @@
 killall -q polybar
 
 polybar -r bspwm 2> /dev/null & disown 
+polybar -r bottom 2> /dev/null & disown
