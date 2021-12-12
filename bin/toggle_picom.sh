@@ -6,7 +6,7 @@ then
 	killall -q picom
   notify.sh "Picom" "Dectivated" "" 2 update
 else
-	picom --experimental-backends &		
+	picom --experimental-backends --xrender-sync-fence &		
   notify.sh "Picom" "Activated" "" 2 update
 fi
 

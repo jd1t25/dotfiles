@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#Reorder Monitor
+bspc wm --reorder-monitors DP-1 DP-0
+
+numlockx
+dunst &
+xfce4-power-manager &
+
+#Scripts
+copyq_create &
+multi_monitor_display 

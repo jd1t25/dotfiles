@@ -28,8 +28,8 @@ urgent = #D76E6E
 ; BPSWM
 ;
 
-[bar/bspwm]
-;monitor = ${env:MONITOR:HDMI-1}
+[bar/top]
+monitor = DP-1
 width = 100%
 height = 7
 radius = 3
@@ -48,25 +48,44 @@ cursor-scroll = ns-resize
 
 [module/bspwm]
 type = internal/bspwm
+pin-workspaces = true
 
-label-focused = %icon:44%
+label-focused = %icon:125%
 label-focused-background = ${colors.focused}
 label-focused-padding = 2
 
-label-occupied = %icon:44% 
+label-occupied = %icon:125% 
 label-occupied-background = ${colors.occupied}
 label-occupied-padding = 2
 
-label-urgent = %icon:44%
+label-urgent = %icon:125%
 label-urgent-background = ${colors.urgent}
 label-urgent-padding = 2
 
-label-empty = %icon:44%
+label-empty = %icon:125%
 label-empty-padding = 2
 
 ; Separator in between workspaces
 label-separator = |
 label-separator-foreground = #00000000
+
+[bar/top_external]
+monitor = DP-0
+width = 100%
+height = 7
+radius = 3
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+font-0 = fixed:pixelsize=10;1
+
+modules-left = bspwm
+
+wm-restack = bspwm
+cursor-click = pointer
+cursor-scroll = ns-resize
 
 
 ;

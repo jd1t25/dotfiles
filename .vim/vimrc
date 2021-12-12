@@ -61,7 +61,7 @@ call plug#end()
   let g:rainbow_active = 1
 
 " Aakash ColorScheme
-  colorscheme aakash
+"  colorscheme aakash
 
 
 
