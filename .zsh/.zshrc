@@ -22,7 +22,7 @@ export ZSH="/home/jd1t/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-plugins=(git bgnotify zsh-autosuggestions fast-syntax-highlighting autojump)
+plugins=(git bgnotify zsh-autosuggestions fast-syntax-highlighting autojump zsh-z)
 
 source $ZSH/oh-my-zsh.sh
 
