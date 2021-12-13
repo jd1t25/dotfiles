@@ -268,4 +268,4 @@ super + c
 # Github Token copy to clipboard
 super + alt + shift + t
 	notify-send "Token Copied"; \
-	xclip -sel c < token_dotfiles
+	xclip -sel c < token

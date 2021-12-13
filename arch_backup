@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo $(pacman -Qentq) > pacman.bak
+echo $(pacman -Qemtq) > yay.bak
+echo $(pacman -Qdq) > pacman-optdep.bak
+
+cp /etc/modprobe.d/blacklist.conf dotfiles/bak/blacklist.conf.bak
+cp /etc/systemd/logind.conf dotfiles/bak/logind.conf.bak
+cp /etc/pulse/system.pa dotfiles/bak/system.pa.bak
+
+date = $(date +"%d %a %y")
+
+cd dotfiles
+git add .
+git commit -am "Backup $DATE"
+git push origin master

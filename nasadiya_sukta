@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+#  Nāsadīya Sūkta also known as the Hymn of Creation, is the 129th hymn of the 10th mandala of the Rigveda
+
+# There was neither non-existence nor existence then;
+# Neither the realm of space, nor the sky which is beyond;
+# What stirred? Where? In whose protection?
+# 
+# There was neither death nor immortality then;
+# No distinguishing sign of night nor of day;
+# That One breathed, windless, by its own impulse;
+# Other than that there was nothing beyond.
+# 
+# Darkness there was at first, by darkness hidden;
+# Without distinctive marks, this all was water;
+# That which, becoming, by the void was covered;
+# That One by force of heat came into being;
+# 
+# Who really knows? Who will here proclaim it?
+# Whence was it produced? Whence is this creation?
+# Gods came afterwards, with the creation of this universe.
+# Who then knows whence it has arisen?
+# 
+# Whether God's will created it, or whether He was mute;
+# Perhaps it formed itself, or perhaps it did not;
+# Only He who is its overseer in highest heaven knows,
+# Only He knows, or perhaps He does not know. 
+
+
+
+
+# Restore packages
+sudo pacman -Syu
+sudo pacman -S --needed - < pacman.bak
+
+# Install yay
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
+# Restore foreign packages
+yay -S --needed < yay.bak
+yay -S --needed --asdeps < pacmam-optdep.bak
+
+# Restore Conf 
+
+cp dotfiles/bak/blacklist.conf.bak /etc/modprobe.d/blacklist.conf
+cp dotfiles/bak/logind.conf.bak /etc/systemd/logind.conf
+cp dotfiles/bak/system.pa.bak /etc/pulse/system.pa
+
+
+# Restore user config folder
+git clone https://github.com/jd1t25/dotfiles.git
+cd dotfiles
+stow .
+cd ..
+
+# Oh-my-zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
+  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+
+#echo $(pacman -Qentq) > pacman.bak
+#echo $(pacman -Qemtq) > yay.bak
+#echo $(pacman -Qdq) > pacman-optdep.bak
