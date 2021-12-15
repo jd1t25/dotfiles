@@ -78,6 +78,7 @@ alias mmd="vim ~/bin/multi_monitor_display"
 alias pos="vim ~/bin/polybar_on_startup"
 
 alias sdl="song_downloader"
+alias v="vim"
 #alias lc='colorls -lA --sd'
 #alias ls='colorls'
 

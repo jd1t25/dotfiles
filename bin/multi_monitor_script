@@ -1,12 +1,18 @@
 #!/bin/sh
 
+#IMP
+multi_monitor_display
+
 #Reorder Monitor
 bspc wm --reorder-monitors DP-1 DP-0
 
 numlockx
 dunst &
 xfce4-power-manager &
+feh --bg-scale Wallpapers/fireworks_by_bisbiswas_dempx5a.jpg Wallpapers/verdant_mountain_by_bisbiswas_derlepn.jpg
 
 #Scripts
 copyq_create &
-multi_monitor_display 
+
+#Refresh
+bspc wm -r
