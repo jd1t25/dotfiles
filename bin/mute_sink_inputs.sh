@@ -18,6 +18,11 @@ sink_input_id_array=( $(pacmd list-sink-inputs | grep "index" | grep -o '[0-9]\+
 
 sink_input_id=${sink_input_id_array[$BROWSER]}
 
+### find sink input browser name
+sink_input_app_name_array=( $(pacmd list-sink-inputs | grep "application.name =" | awk '{print $3}' | sed 's/"//g') )
+
+sink_input_app_name=${sink_input_app_name_arrya[$BROWSER]}
+
 
 ### find sink input mute status
 sink_input_mute_array=( $(pacmd list-sink-inputs | grep "muted" | awk '{print $2}') )

@@ -1,7 +1,10 @@
 #!/bin/sh
 
 #IMP
-multi_monitor_display
+#multi_monitor_display
+
+picom --experimental-backends --xrender-sync-fence &
+polybar_on_startup &
 
 #Reorder Monitor
 bspc wm --reorder-monitors DP-1 DP-0
@@ -14,5 +17,3 @@ feh --bg-scale Wallpapers/fireworks_by_bisbiswas_dempx5a.jpg Wallpapers/verdant_
 #Scripts
 copyq_create &
 
-#Refresh
-bspc wm -r

@@ -6,7 +6,7 @@ echo $(pacman -Qdq) > pacman-optdep.bak
 
 cp /etc/modprobe.d/blacklist.conf dotfiles/bak/blacklist.conf.bak
 cp /etc/systemd/logind.conf dotfiles/bak/logind.conf.bak
-cp /etc/pulse/system.pa dotfiles/bak/system.pa.bak
+cp /etc/pulse/default.pa dotfiles/bak/default.pa
 
 DATE=$(date +"%d %a %y")
 
