@@ -13,8 +13,8 @@
 
 # Devices
 systemctl --user restart pulseaudio.service
-bin/mouse_decel.sh
-bin/multi_monitor_display
+bin/mouse_decel.sh &
+bin/multi_monitor_display &
 
 # IMP
 exec bspwm

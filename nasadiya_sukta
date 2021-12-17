@@ -45,17 +45,21 @@ rm -rf yay
 yay -S --needed < yay.bak
 yay -S --needed --asdeps < pacmam-optdep.bak
 
-# Restore Conf 
-
-cp dotfiles/bak/blacklist.conf.bak /etc/modprobe.d/blacklist.conf
-cp dotfiles/bak/logind.conf.bak /etc/systemd/logind.conf
-cp dotfiles/bak/system.pa.bak /etc/pulse/system.pa
-
 
 # Restore user config folder
 git clone https://github.com/jd1t25/dotfiles.git
 cd dotfiles
 stow .
+cd ..
+
+# Restore Conf
+
+cd dotfiles/bak/
+cp blacklist.conf.bak /etc/modprobe.d/blacklist.conf
+cp logind.conf.bak /etc/systemd/logind.conf
+cp system.pa.bak /etc/pulse/system.pa
+cp sudoers.bak /etc/sudoers
+cd ..
 cd ..
 
 # Oh-my-zsh
