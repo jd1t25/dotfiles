@@ -222,9 +222,8 @@ super + End
 
 
 ### Screenshot
-super + Print
-	notify-send "Screenshot Taken"; \
-	scrot /home/jd1t/Pictures/Screenshots/%F-%H-%M-%S.png -e 'xclip -selection clipboard -target image/png -i $f'
+super + {_,shift} + Print
+	{scrot,scrot -s} /home/jd1t/Pictures/Screenshots/%F-%H-%M-%S.png -e 'xclip -selection clipboard -target image/png -i $f' && notify-send "Screenshot Taken"
 
 
 #

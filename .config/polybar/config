@@ -110,6 +110,7 @@ modules-left = date
 
 cursor-click = pointer
 
+wm-restack = bspwm
 
 [module/date]
 type = internal/date
