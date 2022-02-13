@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "spaceduck",
+    "editor.formatOnSave": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true
+}

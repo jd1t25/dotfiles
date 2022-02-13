@@ -11,7 +11,7 @@ do
 
     if [ ! -z "$COND" ] 
     then
-        xinput set-prop "$i" 'libinput Accel Speed' -0.8
+        xinput set-prop "$i" 'libinput Accel Speed' -0.3
 #        echo "Works..."
     fi
 done

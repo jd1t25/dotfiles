@@ -59,6 +59,7 @@ cp blacklist.conf.bak /etc/modprobe.d/blacklist.conf
 cp logind.conf.bak /etc/systemd/logind.conf
 cp system.pa.bak /etc/pulse/system.pa
 cp sudoers.bak /etc/sudoers
+cp 50-usb_power_save.rules.bak /etc/udev/rules.d/50-usb_power_save.rules 
 cd ..
 cd ..
 

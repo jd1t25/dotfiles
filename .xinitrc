@@ -16,5 +16,9 @@ systemctl --user restart pulseaudio.service
 bin/mouse_decel.sh &
 bin/multi_monitor_display &
 
+
+touch /tmp/first_time
+
+
 # IMP
 exec bspwm

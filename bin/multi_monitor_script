@@ -1,13 +1,14 @@
 #!/bin/sh
 
 #IMP
-#multi_monitor_display
+multi_monitor_display
 
 picom --experimental-backends --xrender-sync-fence &
 polybar_on_startup &
 
 #Reorder Monitor
 bspc wm --reorder-monitors DP-1 DP-0
+
 
 numlockx
 dunst &
@@ -17,3 +18,11 @@ feh --bg-scale Wallpapers/fireworks_by_bisbiswas_dempx5a.jpg Wallpapers/verdant_
 #Scripts
 copyq_create &
 
+
+## Refresh
+
+sleep 1s
+
+if [[ -e /tmp/first_time ]]
+    bspc wm -r
+    rm /tmp/first_time
