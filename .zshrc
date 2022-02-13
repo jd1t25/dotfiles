@@ -99,12 +99,12 @@ zplug "agkozak/zsh-z"
 zplug denysdovhan/spaceship-zsh-theme, use:spaceship.zsh, from:github, as:theme
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
+#if ! zplug check --verbose; then
+#    printf "Install? [y/N]: "
+#    if read -q; then
+#        echo; zplug install
+#    fi
+#fi
 
 # Then, source plugins and add commands to $PATH
 zplug load

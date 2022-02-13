@@ -1,4 +1,0 @@
-[2022-02-13 04:19:01.159] [renderer1] [info] IExtensionHostStarter.start() took 29 ms.
-[2022-02-13 04:19:01.501] [renderer1] [error] [Extension Host] (node:2212) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `codium --trace-deprecation ...` to show where the warning was created)
-[2022-02-13 04:19:02.988] [renderer1] [warning] [File Watcher (node.js)] correcting a path to watch that seems to be a symbolic link or wrong casing (original: /home/jd1t/.config/VSCodium/User, real: /home/jd1t/dotfiles/.config/VSCodium/User)
