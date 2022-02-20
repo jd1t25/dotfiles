@@ -31,41 +31,50 @@
 
 # Restore packages
 sudo pacman -Syu
-sudo pacman -S --needed - < pacman.bak
+cat "backup/pacman.bak" | xargs sudo pacman -S --noconfirm --needed
+#sudo pacman -S --needed - < pacman.bak
 
 # Install yay
-sudo pacman -S --needed git base-devel
+sudo pacman -S --needed base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ..
 rm -rf yay
 
+#yay --save --answerclean All --answerdiff All
+
 # Restore foreign packages
-yay -S --needed < yay.bak
-yay -S --needed --asdeps < pacmam-optdep.bak
+
+cat "backup/yay.bak" | xargs yay -S --needed --noconfirm
+
+#yay -S --needed < yay.bak
+#yay -S --needed --asdeps < pacmam-optdep.bak
 
 
 # Restore user config folder
-git clone https://github.com/jd1t25/dotfiles.git
-cd dotfiles
+#git clone https://github.com/jd1t25/dotfiles.git
+#cd dotfiles
 stow .
-cd ..
+cd .config
+stow --adopt -t ~/.config .config
 
 # Restore Conf
 
-cd dotfiles/bak/
-cp blacklist.conf.bak /etc/modprobe.d/blacklist.conf
-cp logind.conf.bak /etc/systemd/logind.conf
-cp system.pa.bak /etc/pulse/system.pa
-cp sudoers.bak /etc/sudoers
-cp 50-usb_power_save.rules.bak /etc/udev/rules.d/50-usb_power_save.rules 
-cd ..
-cd ..
+#cd ~/dotfiles/bak/
+#cp blacklist.conf.bak /etc/modprobe.d/blacklist.conf
+#cp logind.conf.bak /etc/systemd/logind.conf
+#cp system.pa.bak /etc/pulse/system.pa
+#cp 50-usb_power_save.rules.bak /etc/udev/rules.d/50-usb_power_save.rules 
+#cp sudoers.bak /etc/sudoers
+
+#cd ..
+#cd ..
 
 # Oh-my-zsh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+cd ~
 
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
   ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
