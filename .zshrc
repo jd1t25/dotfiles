@@ -42,7 +42,9 @@ autoload -U select-word-style
 select-word-style bash              #deletes words till '/'  
 
 export WORDCHARS='.-'
-    
+
+export VIMINIT='source $MYVIMRC'
+export MYVIMRC='~/.vim/vimrc'
 
 #### ColorLs ####
 #source $(dirname $(gem which colorls))/tab_complete.sh

@@ -1,3 +1,7 @@
+# fonts
+
+/.local/share/fonts
+
 install linux-lts-headers
 
 install zsh 

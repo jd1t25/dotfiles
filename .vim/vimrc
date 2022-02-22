@@ -70,10 +70,13 @@ call plug#end()
 "####------------------------------------------------------------####
 
 
+cmap w!! %!sudo tee > /dev/null
+
 vnoremap <C-X> "+x
 vnoremap <C-C> "+y
 noremap  <C-A> ggVG
 vnoremap <Del> "_dd
+
 "map <C-V>       "+gP
 "vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
 "noremap <C-C> !xclip -i -sel c<CR><CR>

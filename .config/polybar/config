@@ -94,18 +94,18 @@ cursor-scroll = ns-resize
 
 
 [bar/bottom]
-width = 12%
+width = 15%
 height = 23 
 fixed-center = true
 
-offset-x = 88%
+offset-x = 85%
 bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = "Goldie Boxing:style=Regular:size=14;1"
-
+#font-0 = "Goldie Boxing:style=Regular:size=14;1"
+font-0 = "Victoria Typewriter:style=Regular:size=14;1"
 modules-left = date
 
 cursor-click = pointer
