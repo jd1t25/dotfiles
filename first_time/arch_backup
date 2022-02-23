@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo $(pacman -Qentq) > ~/dotfiles/backup/pacman.bak
+echo $(pacman -Qemtq) > ~/dotfiles/backup/yay.bak
+echo $(pacman -Qdq) > ~/dotfiles/backup/pacman-optdep.bak
+
+#cp /etc/modprobe.d/blacklist.conf dotfiles/bak/blacklist.conf.bak
+cp /etc/modprobe.d/* dotfiles/bak/*.bak
+cp /etc/systemd/logind.conf dotfiles/bak/logind.conf.bak
+cp /etc/pulse/default.pa dotfiles/bak/default.pa
+#cp /etc/udev/rules.d/50-usb_power_save.rules dotfiles/bak/50-usb_power_save.rules
+
+DATE=$(date +"%d %a %y")
+
+cd dotfiles
+git add . -v
+git commit -am "Backup $DATE"
+git push origin master

@@ -1,0 +1,8 @@
+# Stow 
+
+# Once in dotfiles directory 
+stow -v . 
+
+# Another in .config dir
+stow --adopt -vt ~/.config .config
+
