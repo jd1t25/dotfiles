@@ -1,63 +1,65 @@
 #!/usr/bin/env bash
 
-#  Nāsadīya Sūkta also known as the Hymn of Creation, is the 129th hymn of the 10th mandala of the Rigveda
-
-# There was neither non-existence nor existence then;
-# Neither the realm of space, nor the sky which is beyond;
-# What stirred? Where? In whose protection?
-# 
-# There was neither death nor immortality then;
-# No distinguishing sign of night nor of day;
-# That One breathed, windless, by its own impulse;
-# Other than that there was nothing beyond.
-# 
-# Darkness there was at first, by darkness hidden;
-# Without distinctive marks, this all was water;
-# That which, becoming, by the void was covered;
-# That One by force of heat came into being;
-# 
-# Who really knows? Who will here proclaim it?
-# Whence was it produced? Whence is this creation?
-# Gods came afterwards, with the creation of this universe.
-# Who then knows whence it has arisen?
-# 
-# Whether God's will created it, or whether He was mute;
-# Perhaps it formed itself, or perhaps it did not;
-# Only He who is its overseer in highest heaven knows,
-# Only He knows, or perhaps He does not know. 
 
 
+### Functions
 
 
-# Restore packages
-sudo pacman -Syu
-cat "backup/pacman.bak" | xargs sudo pacman -S --noconfirm --needed
-#sudo pacman -S --needed - < pacman.bak
+shloka () {
+  var=$(cat shloka.txt)
+  for (( i=0; i<${#var}; i++ )); do
+     sleep 0.01 | echo -ne "$(tput setaf 2)${var:$i:1}$(tput sgr 0)"
+  done
+  echo ""
+}
 
-# Install yay
-sudo pacman -S --needed base-devel --noconfirm
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-rm -rf yay
+install_packages () {
+  # Restore packages
+  sudo pacman -Syu
+  cat "~/dotfiles/backup/pacman.bak" | xargs sudo pacman -S --noconfirm --needed 2> ~/packages.log 
+  #sudo pacman -S --needed - < pacman.bak
+}
 
+yay() {
+  # Install yay
+  sudo pacman -S --needed base-devel --noconfirm
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
+  cd ..
+  rm -rf yay
+}
 #yay --save --answerclean All --answerdiff All
 
-# Restore foreign packages
+check_yay() {
+  sudo pacman -Q | grep yay
+  echo $? > yaystatus.log
+  check yaystatus.log
+}
 
-cat "backup/yay.bak" | xargs yay -S --needed --noconfirm
-
+foreign_packages () {
+  # Restore foreign packages
+  cat "~/dotfiles/backup/yay.bak" | xargs yay -S --needed --noconfirm 2> yay.log
+}
 #yay -S --needed < yay.bak
 #yay -S --needed --asdeps < pacmam-optdep.bak
 
+config() {
+  # Restore user config folder
+  #git clone https://github.com/jd1t25/dotfiles.git
+  #cd dotfiles
+  stow -d ~/dotfiles/ -t ~
+  cd ~/dotfiles/config
+  stow --adopt -t ~/.config .config
+}
 
-# Restore user config folder
-#git clone https://github.com/jd1t25/dotfiles.git
-#cd dotfiles
-stow .
-cd .config
-stow --adopt -t ~/.config .config
+check() {
+  if [ -s $1 ]
+    tput setaf 1; echo "Error in ${1%.*} Installed\n"
+  else
+    tput setaf 2; echo "Error in ${1%.*} Installed\n"
+  fi
+}
 
 # Restore Conf
 
@@ -74,13 +76,27 @@ stow --adopt -t ~/.config .config
 # Oh-my-zsh
 #sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-cd ~
-
-git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
-  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+#cd ~
+#
+#git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
+#  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 #echo $(pacman -Qentq) > pacman.bak
 #echo $(pacman -Qemtq) > yay.bak
 #echo $(pacman -Qdq) > pacman-optdep.bak
+
+### Main
+
+main() {
+  shloka
+  install_packages 1> /dev/null
+  check packages.log
+  yay 1> /dev/null
+  yay_status
+  foreign_packages 1> /dev/null
+  check yay.log
+  config 1> /dev/null
+  echo "\n$(tput setaf 2) Configs Done"
+
