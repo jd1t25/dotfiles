@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
+# Pre-requsite
 
+mkdir ~/.logs
 
 ### Functions
 
@@ -91,7 +93,6 @@ config() {
 ### Main
 
 main() {
-  mkdir ~/.logs
   shloka
   yes | install_packages > ~/.logs/packages.log 2>&1
   printf "\n$(tput setaf 2) Packages Done$(tput sgr 0)"

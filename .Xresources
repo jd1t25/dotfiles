@@ -6,7 +6,7 @@
 ! ╚═╝░░╚═╝╚═╝░░╚═╝╚══════╝╚══════╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝░╚═════╝╚══════╝╚══════╝
 !
 ! -----------------------------------
-Xft.dpi: 102
+!Xft.dpi: 102
 !Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -15,7 +15,7 @@ Xft.autohint: false
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
-xcursor.theme: Vanilla-DMZ
+!xcursor.theme: Vanilla-DMZ
 xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====

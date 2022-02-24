@@ -12,7 +12,7 @@ cp /etc/pulse/default.pa dotfiles/bak/default.pa
 
 DATE=$(date +"%d %a %y")
 
-cd dotfiles
+cd ~/dotfiles
 git add . -v
 git commit -am "Backup $DATE"
 git push origin master

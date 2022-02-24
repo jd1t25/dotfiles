@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jd1t/dotfiles/.config/ncmpcpp'
 let g:netrw_dirhist_6='/home/jd1t/.zsh'
 let g:netrw_dirhist_5='/home/jd1t/dotfiles/.config/polybar'
 let g:netrw_dirhist_4='/home/jd1t/.config'

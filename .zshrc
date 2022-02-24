@@ -103,6 +103,8 @@ alias mms="vim $HOME/bin/multi_monitor_script"
 alias mmd="vim ~/bin/multi_monitor_display"
 alias pos="vim ~/bin/polybar_on_startup"
 
+
+alias yeet="yay -Rsn"
 alias sdl="song_downloader"
 alias v="vim"
 #alias lc='colorls -lA --sd'
