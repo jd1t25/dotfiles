@@ -17,7 +17,7 @@ feh --bg-scale Wallpapers/fireworks_by_bisbiswas_dempx5a.jpg Wallpapers/verdant_
 
 #Scripts
 copyq_create &
-bin/volume-rocker >/dev/null 2>&1
+bin/volume-rocker 
 
 ## Refresh
 
