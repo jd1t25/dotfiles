@@ -1,3 +1,9 @@
+# icons
+
+mkdir .local/share/icons
+tar –xvzf ~/dotfiles/icons/candy-icons.tar.xz –C .local/share/icons
+
+
 # fonts
 
 /.local/share/fonts
