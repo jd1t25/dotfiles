@@ -16,3 +16,5 @@ cd ~/dotfiles
 git add . -v
 git commit -am "Backup $DATE"
 git push origin master
+
+notify-send "Arch Backup Updated on Cloud"
