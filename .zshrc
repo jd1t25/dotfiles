@@ -102,7 +102,7 @@ alias pmx="pulsemixer"
 alias mms="vim $HOME/bin/multi_monitor_script"
 alias mmd="vim ~/bin/multi_monitor_display"
 alias pos="vim ~/bin/polybar_on_startup"
-
+alias guc="github-upload-cloud"
 
 alias yeet="yay -Rsn"
 alias sdl="song_downloader"
