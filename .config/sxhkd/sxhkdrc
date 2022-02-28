@@ -263,6 +263,11 @@ super + alt + n
 	notify-send "Opening Browser Player"; \
 	lofi.sh
 
+# Spotify
+super + alt + s
+	notify-send "Opening Spotify"; \
+	LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
+
 # Copyq
 super + c
 	copyq_toggle
