@@ -45,7 +45,7 @@ set lazyredraw                      "Remove flashing on large yanks
 call plug#begin('~/.vim/plugged')
 
   "Plug 'flazz/vim-colorschemes'
-  "Plug 'frazrepo/vim-rainbow'
+  Plug 'frazrepo/vim-rainbow'
   Plug 'sheerun/vim-polyglot'
   Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
   Plug 'wellle/targets.vim'
@@ -61,8 +61,8 @@ call plug#end()
 "  let g:rainbow_active = 1
 
 " Aakash ColorScheme
-"  colorscheme aakash
-
+  colorscheme aakash
+"  colorscheme spaceduck
 
 
 "####------------------------------------------------------------####

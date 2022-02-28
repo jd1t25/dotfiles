@@ -137,5 +137,6 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug load
 #autoload -U compinit
 
+
 autoload -U promptinit; promptinit
 prompt spaceship
