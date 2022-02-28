@@ -123,7 +123,7 @@ zplug "plugins/bgnotify",   from:oh-my-zsh
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zdharma-continuum/fast-syntax-highlighting"
 zplug "agkozak/zsh-z"
-zplug denysdovhan/spaceship-zsh-theme, use:spaceship.zsh, from:github, as:theme
+#zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 #if ! zplug check --verbose; then
@@ -137,4 +137,5 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug load
 #autoload -U compinit
 
-
+autoload -U promptinit; promptinit
+prompt spaceship
