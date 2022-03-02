@@ -12,6 +12,7 @@ set number relativenumber
 set hidden
 set undofile
 set undodir=/home/jd1t/.vim/vimundo/
+set encoding=UTF-8
 
 set wildmenu
 set shiftwidth=4
@@ -35,6 +36,12 @@ set clipboard=unnamedplus
 set lazyredraw                      "Remove flashing on large yanks
 
 
+let mapleader=" "
+
+" NerdTree
+autocmd VimEnter * NERDTree | wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 "####------------------------------------------------------------####
 "                           Vim Plug Manager
@@ -47,10 +54,17 @@ call plug#begin('~/.vim/plugged')
   "Plug 'flazz/vim-colorschemes'
   Plug 'frazrepo/vim-rainbow'
   Plug 'sheerun/vim-polyglot'
-  Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+  "Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
   Plug 'wellle/targets.vim'
   Plug 'psliwka/vim-smoothie'
   Plug 'kovetskiy/sxhkd-vim'
+  Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'Raimondi/delimitMate'
+
 
 
 
@@ -76,6 +90,12 @@ vnoremap <C-X> "+x
 vnoremap <C-C> "+y
 noremap  <C-A> ggVG
 vnoremap <Del> "_dd
+
+" NerdTree
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+
+
 
 "map <C-V>       "+gP
 "vnoremap <C-C> :w !xclip -i -sel c<CR><CR>
