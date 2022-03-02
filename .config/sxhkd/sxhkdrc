@@ -200,7 +200,9 @@ super + alt + shift + m
 
 ### Audio Switch
 super + Pause
-	audio_switcher.sh
+	audio_switcher.sh; \
+#	pkill -f "python3 bin/pulse-volume-watcher.py"; \
+#	volume-rocker
 
 
 #

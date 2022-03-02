@@ -13,4 +13,10 @@ CURRENT_SINK=$(pacmd stat | grep "Default sink name" | sed 's/.*: *//')
 		notify-send -t 2500 "Audio 2 Headphones" --icon="~/.icons/headphones-solid.png"
 	fi
 
+if pgrep -f "python3 bin/pulse-volume-watcher.py" > /dev/null
+then
+		pkill -f "python3 bin/pulse-volume-watcher.py"
+fi
+
+nohup bash -c 'bin/pulse-volume-watcher.py | xob' &> /dev/null &
 

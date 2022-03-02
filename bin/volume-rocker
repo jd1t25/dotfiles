@@ -3,3 +3,5 @@
 #./bin/pulse-volume-watcher.py | xob > /dev/null 2>&1
 
 nohup bash -c 'bin/pulse-volume-watcher.py | xob' &> /dev/null &
+
+#bash -c 'bin/pulse-volume-watcher.py | xob' 
