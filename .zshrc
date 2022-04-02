@@ -100,7 +100,7 @@ alias krc="vim ~/.config/kitty/kitty.conf"
 alias arc="vim ~/.config/awesome/rc.lua"
 alias pmx="pulsemixer"
 alias mms="vim $HOME/bin/multi_monitor_script"
-alias mmd="vim ~/bin/multi_monitor_display"
+alias ash="vim ~/bin/autostart.sh"
 alias pos="vim ~/bin/polybar_on_startup"
 alias guc="github-upload-cloud"
 

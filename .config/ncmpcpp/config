@@ -1,5 +1,5 @@
 #execute_on_song_change="~/ncmpcpp/ncmpcpp-ueberzug/./ncmpcpp_cover_art.sh"
-execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
+execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% \n%album%' current)"
 
 # Files
  mpd_music_dir = "/mnt/win1/Music"  

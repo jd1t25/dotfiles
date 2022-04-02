@@ -23,4 +23,4 @@ touch /tmp/first_time
 
 
 # IMP
-exec bspwm
+exec awesome

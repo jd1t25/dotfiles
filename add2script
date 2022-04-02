@@ -6,6 +6,10 @@ tar –xvzf ~/dotfiles/icons/candy-icons.tar.xz –C .local/share/icons
 
 # fonts
 
+ttf-dejavu
+
+python2-rsvg
+
 /.local/share/fonts
 
 install linux-lts-headers
