@@ -4,7 +4,8 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 
 local keys = require("keys")
-local sharedtags = require("sharedtags")
+
+require("helpers")
 
 
 local tag_colors_empty = { "#00000000", "#00000000", "#00000000", "#00000000", "#00000000", "#00000000", "#00000000", "#00000000", "#00000000", "#00000000" }
@@ -54,13 +55,13 @@ end
 
 screen.connect_signal("request::desktop_decoration", function(s)
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
+--    awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
 
---    if s.index==1 then
---        awful.tag({ "1 ", "2", "3", "4", "5" }, screen[1], awful.layout.layouts[1])
---    elseif s.index==2 then
---        awful.tag({ "6", "7", "8", "9" }, screen[2], awful.layout.layouts[1])
---    end
+    if s.index==1 then
+        awful.tag({ "1 ", "2", "3", "4", "5" }, screen[1], awful.layout.layouts[1])
+    elseif s.index==2 then
+        awful.tag({ "6", "7", "8", "9" }, screen[2], awful.layout.layouts[1])
+    end
 
     -- Create a taglist widget
     s.mytaglist = awful.widget.taglist {

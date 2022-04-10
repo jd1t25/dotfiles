@@ -4,6 +4,8 @@ local gears = require("gears")
 local beautiful = require("beautiful")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
+require("helpers")
+
 
 local keys = {}
 
@@ -157,21 +159,9 @@ awful.keyboard.append_global_keybindings({
         description = "only view tag",
         group       = "tag",
         on_press    = function (index)
---            if index<6 then
---                -- less the 6 are screen 1 tags
---                s = screen[1]
---            else
---            -- all the other belong to screen 2
---            s = screen[2]
---            -- fixing the list index, since screen[2].tags[1] is the tag 6
---            index = index-5
---            end
---            local tag = s.tags[index]
-            local screen = awful.screen.focused()
-            local tag = screen.tags[index]
-            if tag then
-                tag:view_only()
-            end
+--          code in helpers.lua
+            sharedviewtag(index)
+
         end,
     },
     awful.key {
@@ -180,21 +170,8 @@ awful.keyboard.append_global_keybindings({
         description = "toggle tag",
         group       = "tag",
         on_press    = function (index)
---            if index<6 then
---                -- less the 6 are screen 1 tags
---                s = screen[1]
---            else
---            -- all the other belong to screen 2
---            s = screen[2]
---            -- fixing the list index, since screen[2].tags[1] is the tag 6
---            index = index-5
---            end
---            local tag = s.tags[index]
-            local screen = awful.screen.focused()
-            local tag = screen.tags[index]
-            if tag then
-                awful.tag.viewtoggle(tag)
-            end
+--          code in helpers.lua
+            sharedtoggletag(index)
         end,
     },
     awful.key {
@@ -203,19 +180,8 @@ awful.keyboard.append_global_keybindings({
         description = "move focused client to tag",
         group       = "tag",
         on_press    = function (index)
-             if client.focus then
-                local tag = client.focus.screen.tags[index]
-                if tag then
---                    if index<6 then
-                        client.focus:move_to_tag(tag)
---                    else
---                        index=index-5
---                       local tag = client.focus.screen.tags[index]
---                        client.focus:move_to_screen()
---                        client.focus:move_to_tag(tag)
---                    end
-                end
-            end
+--          code in helpers.lua                      
+            sharedmovetag(index)
         end,
     },
     awful.key {

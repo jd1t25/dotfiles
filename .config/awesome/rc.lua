@@ -76,7 +76,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 local keys = require("keys")
 -- Taglist / Bar 
 require("bar")
-
+require("helpers")
 
 
 -- {{{ Tag layout
