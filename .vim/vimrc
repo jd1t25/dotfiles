@@ -42,6 +42,9 @@ let mapleader=" "
 "autocmd VimEnter * NERDTree | wincmd p
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" AutoSave Vim
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
 
 "####------------------------------------------------------------####
 "                           Vim Plug Manager
@@ -68,7 +71,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'Raimondi/delimitMate'
   Plug 'elkowar/yuck.vim'
   Plug 'bhurlow/vim-parinfer'
-
+  Plug '907th/vim-auto-save'
 
 
 

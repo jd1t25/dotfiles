@@ -19,6 +19,7 @@ function sharedviewtag(index)
 
     if tag then
         tag:view_only()
+--        tag:raise()
     end
 end
 

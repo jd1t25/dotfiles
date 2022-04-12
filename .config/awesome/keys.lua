@@ -82,8 +82,8 @@ awful.keyboard.append_global_keybindings({
               {description = "view previous", group = "tag"}),
     awful.key({ superkey,           }, "Right",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
-    awful.key({ superkey,           }, "Escape", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
+--    awful.key({ superkey,           }, "Escape", awful.tag.history.restore,
+--              {description = "go back", group = "tag"}),
 })
 
 -- Focus related keybindings

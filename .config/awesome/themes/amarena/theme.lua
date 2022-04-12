@@ -45,7 +45,7 @@ theme.useless_gap   = dpi(5)
 theme.screen_margin = dpi(5)
 
 -- Borders
-theme.border_width  = dpi(0)
+theme.border_width  = dpi(5)
 -- theme.border_color = x.color0
 theme.border_normal = x.background
 theme.border_focus  = x.background
