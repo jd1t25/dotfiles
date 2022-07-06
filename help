@@ -3,6 +3,6 @@
 # Once in dotfiles directory 
 stow -v . 
 
-# Another in .config dir
+# Again in dotfiles dir
 stow --adopt -vt ~/.config .config
 

@@ -87,7 +87,8 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 #### Aliases ####
 
-alias sx="startx"
+#alias sx="startx"
+alias hx="Hyprland"
 alias szrc="source .zshrc"
 alias zrc="vim .zshrc"
 alias vrc="vim ~/.vim/vimrc"
@@ -103,10 +104,17 @@ alias mms="vim $HOME/bin/multi_monitor_script"
 alias ash="vim ~/bin/autostart.sh"
 alias pos="vim ~/bin/polybar_on_startup"
 alias guc="github-upload-cloud"
-
+alias hrc="vim ~/.config/hypr/hyprland.conf"
 alias yeet="yay -Rsn"
+alias plant="yay -S --noconfirm"
+alias dig="sudo pacman -Qe | grep"
 alias sdl="song_downloader"
 alias v="vim"
+
+alias ll="exa -l -g --icons"
+alias ls="exa --icons"
+alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
+
 #alias lc='colorls -lA --sd'
 #alias ls='colorls'
 

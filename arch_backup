@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $(pacman -Qentq) > ~/dotfiles/backup/pacman.bak
+echo $(pacman -Qentq) > ~/dotfiles/backup/pacman.ba
 echo $(pacman -Qemtq) > ~/dotfiles/backup/yay.bak
 echo $(pacman -Qdq) > ~/dotfiles/backup/pacman-optdep.bak
 
