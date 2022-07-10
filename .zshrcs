@@ -124,27 +124,27 @@ export PATH="$PATH:/home/jd1t/.local/bin"
 #autoload -U compinit
 
 # Zplug
-source ~/.zplug/init.zsh
-
-zplug "plugins/git",   from:oh-my-zsh
-zplug "plugins/bgnotify",   from:oh-my-zsh
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zdharma-continuum/fast-syntax-highlighting"
-zplug "agkozak/zsh-z"
-#zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-
-#if ! zplug check --verbose; then
-#    printf "Install? [y/N]: "
-#    if read -q; then
-#        echo; zplug install
-#    fi
-#fi
-
-# Then, source plugins and add commands to $PATH
-zplug load
-#autoload -U compinit
-
-
-autoload -U promptinit; promptinit
-prompt spaceship
+#source ~/.zplug/init.zsh
+#
+#zplug "plugins/git",   from:oh-my-zsh
+#zplug "plugins/bgnotify",   from:oh-my-zsh
+#zplug "zsh-users/zsh-autosuggestions"
+#zplug "zdharma-continuum/fast-syntax-highlighting"
+#zplug "agkozak/zsh-z"
+##zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
+#zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+#
+##if ! zplug check --verbose; then
+##    printf "Install? [y/N]: "
+##    if read -q; then
+##        echo; zplug install
+##    fi
+##fi
+#
+## Then, source plugins and add commands to $PATH
+#zplug load
+##autoload -U compinit
+#
+#
+#autoload -U promptinit; promptinit
+#prompt spaceship

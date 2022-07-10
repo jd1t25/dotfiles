@@ -34,13 +34,14 @@ bspc rule -a xdman-Main state=floating
 
 # Start Apps on specific workspace
 
-bspc rule -a firefox desktop='^2'
-bspc rule -a brave desktop='^3'
-bspc rule -a qBittorrent desktop='^7'
-bspc rule -a discord desktop='^8'
-bspc rule -a Org.gnome.Nautilus desktop='^4'
-bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a firefox desktop='^2' follow=off
+bspc rule -a brave desktop='^3' follow=off 
+bspc rule -a qBittorrent desktop='^7' follow=off
+bspc rule -a discord desktop='^8' follow=off
+bspc rule -a Org.gnome.Nautilus desktop='^4' follow=off
+bspc rule -a TelegramDesktop desktop='^9' follow=off
 bspc rule -a m_on_browser desktop='^10' follow=off
+bspc rule -a notion-app-enhanced desktop='^6' follow=off
 
 bspc rule -a copyq state=floating hidden=on
 
@@ -48,4 +49,5 @@ bspc rule -a copyq state=floating hidden=on
 ### Startup 
 
 #$HOME/bin/polybar.sh
-$HOME/bin/multi_monitor_script
+#$HOME/bin/multi_monitor_script
+$HOME/.config/bspwm/autostart

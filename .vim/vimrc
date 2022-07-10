@@ -43,7 +43,7 @@ let mapleader=" "
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " AutoSave Vim
-let g:auto_save = 1  " enable AutoSave on Vim startup
+"let g:auto_save = 1  " enable AutoSave on Vim startup
 
 
 "####------------------------------------------------------------####
