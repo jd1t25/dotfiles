@@ -195,7 +195,7 @@ super + Delete
 #pulsemixer --toggle-mute
 
 # Mute Input Sink
-super + alt + shift + m
+super + shift + m
 	mute_sink_inputs.sh
 
 ### Audio Switch
