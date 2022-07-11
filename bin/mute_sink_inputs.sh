@@ -7,7 +7,7 @@ WIN=()
 
 
 for i in "${PID[@]}"; do
-  WIN+=($(wmctrl -p -l | grep "$i" | cut -d " " -f 7-))
+  WIN+=($(wmctrl -p -l | grep "$i" | awk '{$1=$2=$3=$4="";print}'))
 done
 
 #for i in "${WIN[@]}"; do echo "$i"; done
@@ -16,14 +16,14 @@ function inp()
   for i in "${WIN[@]}"; do echo "$i"; done
 }
 
-out=$(inp | rofi -dmenu -format i)
+out=$(inp | rofi -dmenu -format i -p "Mute Sink")
 
 if [[ "$out" == "" ]]; then
   exit
 fi
 
 name=${WIN[$out]}
-ins=$(wmctrl -p -l | grep $name | cut -d " " -f 4)
+ins=$(wmctrl -p -l | grep $name | awk '{$1=$2=$3=$4="";print}')
 player=$(playerctl -l | grep $ins)
 playerctl --player=$player play-pause
 

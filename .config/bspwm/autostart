@@ -1,5 +1,14 @@
 picom --experimental-backends &
-dunst &
 feh --bg-fill Downloads/wallpaper/pixelart_night_stars_clouds_trees_cozy.png
-discord &
-notion-app-enhanced &
+
+if [ -e /tmp/first ]
+then
+  dunst &
+  telegram-desktop &
+  discord &
+  notion-app-enhanced &
+  numlockx &
+  bspc monitor DP-0 -s DP-1
+fi
+
+rm /tmp/first

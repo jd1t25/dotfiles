@@ -65,6 +65,10 @@ super + {_,shift + }{h,j,k,l}
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
+# focus on next window in current desktop 
+super + Tab
+	bspc node -f next.local.!hidden.window
+
 # focus the next/previous window in the current desktop
 #super + {_,shift + }c
 #	bspc node -f {next,prev}.local.!hidden.window
@@ -74,8 +78,8 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+#super + {grave,Tab}
+#	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -142,9 +146,9 @@ ctrl + shift + alt + p
 
 # Halt
 ctrl + shift + alt + h
-	notify-send "Halting in 3"; \
+	notify-send "Hibernating in 3"; \
 	sleep 3s; \
-	systemctl halt
+	systemctl hibernate
 
 # Suspend
 ctrl + shift + alt + s
