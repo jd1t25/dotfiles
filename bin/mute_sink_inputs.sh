@@ -1,7 +1,27 @@
 #! /bin/bash
 
-IFS=$'\n' PID=($(playerctl --list-all | grep -o '[0-9]\+'))
+
+#IFS=$'\n' PID=($(playerctl --list-all | grep -o '[0-9]\+'))
 #WIN=wmctrl -p -l | grep 106062 | cut -d " " -f 6-
+
+IFS=$'\n' INPUT=($(playerctl --list-all))
+NL=$'\n'
+ADD=Spotify
+DIF=spotify
+#for i in "${INPUT[@]}"; do echo "$i"; done
+
+IFS=$'\n' PID=()
+
+for i in "${INPUT[@]}"; do
+  if [[ $i =~ [0-9] ]]; then
+    PID+=($(echo "$i" | grep -o '[0-9]\+'))
+  elif [[ "$i" == "$DIF" ]]; then
+    PID+=($ADD)
+  fi
+done
+
+
+#for i in "${PID[@]}"; do echo $i; done
 
 WIN=()
 
@@ -20,11 +40,15 @@ out=$(inp | rofi -dmenu -format i -p "Mute Sink")
 
 if [[ "$out" == "" ]]; then
   exit
+elif [[ "${PID[$out]}" == $ADD ]]; then
+  player=$DIF
+else
+#  name=${WIN[$out]}
+#  echo $name
+#  ins=$(wmctrl -p -l | grep $name | awk '{$1=$2=$3=$4="";print}')
+  ins=${INPUT[$out]}
+  player=$(playerctl -l | grep $ins)
 fi
-
-name=${WIN[$out]}
-ins=$(wmctrl -p -l | grep $name | awk '{$1=$2=$3=$4="";print}')
-player=$(playerctl -l | grep $ins)
 playerctl --player=$player play-pause
 
 ### find name of Sink Inputs
