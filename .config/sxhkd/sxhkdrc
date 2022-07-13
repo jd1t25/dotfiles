@@ -165,8 +165,9 @@ super + F5
 
 
 ### Task Manager
-#ctrl + shift + escape
-#	bpytop
+ctrl + shift + Escape
+	task_manager_create
+	#	bpytop
 
 
 # Toggle Picom

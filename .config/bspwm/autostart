@@ -11,7 +11,8 @@ then
   numlockx &
   bspc monitor DP-0 -s DP-1
   conky &
-  kitty --class time_terminal /bin/zsh -c "tty-clock -b -f %d-%b-%y" &
+  time_terminal_create.sh
+  redshift &
 fi
 
 rm /tmp/first

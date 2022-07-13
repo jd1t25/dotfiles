@@ -46,6 +46,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "let g:auto_save = 1  " enable AutoSave on Vim startup
 
 
+if expand('%:h') =~ '/home/jd1t/dotfiles/.config/bspwm/bspwmrc'
+  autocmd BufWritePost * execute './.config/bspwm/bspwmrc'
+endif
+
+
+
 "####------------------------------------------------------------####
 "                           Vim Plug Manager
 "####------------------------------------------------------------####
