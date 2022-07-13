@@ -1,5 +1,6 @@
 picom --experimental-backends &
-feh --bg-fill Downloads/wallpaper/pixelart_night_stars_clouds_trees_cozy.png
+feh --bg-fill /mnt/win2/Wallpapers/Minimalist/astro.jpeg /mnt/win2/Wallpapers/Minimalist/moon.png
+
 
 if [ -e /tmp/first ]
 then
@@ -9,6 +10,9 @@ then
   notion-app-enhanced &
   numlockx &
   bspc monitor DP-0 -s DP-1
+  conky &
+  kitty --class time_terminal /bin/zsh -c "tty-clock -b -f %d-%b-%y" &
 fi
 
 rm /tmp/first
+notify-send "WM Reloaded"

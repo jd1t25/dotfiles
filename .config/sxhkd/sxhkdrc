@@ -286,6 +286,10 @@ super + alt + s
 #super + c
 #	copyq_toggle
 
+# Time Terminal
+super + slash
+	time_terminal.sh
+
 # Github Token copy to clipboard
 super + alt + shift + t
 	notify-send "Token Copied"; \

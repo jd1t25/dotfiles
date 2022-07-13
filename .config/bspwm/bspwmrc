@@ -50,6 +50,8 @@ bspc rule -a notion-app-enhanced desktop='^6' follow=off
 bspc rule -a copyq state=floating hidden=on
 
 
+bspc rule -a time_terminal rectangle=370x250+100+100 state=floating sticky=on --f hidden=on 
+
 ### Startup 
 
 #$HOME/bin/polybar.sh
