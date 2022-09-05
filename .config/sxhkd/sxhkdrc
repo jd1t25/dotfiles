@@ -10,9 +10,9 @@ super + Return
 super + d
 	rofi -modi "drun" -show drun -theme .config/rofi/spotlight.rasi
 
- make sxhkd reload its configuration files:
+# make sxhkd reload its configuration files:
 super + Escape
- pkill -USR1 -x sxhkd
+        pkill -USR1 -x sxhkd
 	notify-send "SXHKD Updated"
 
 
@@ -266,6 +266,10 @@ super + alt + o
 super + alt + v
 	notify-send "Opening Vivaldi"; \
 	vivaldi-stable
+
+super + alt + t
+        notify-send "Opening Tor"; \
+        tor-browser
 
 
 # Music Player

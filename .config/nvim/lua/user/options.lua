@@ -43,4 +43,8 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
+vim.cmd([[
+  filetype plugin indent on
+  syntax on
+]])
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work

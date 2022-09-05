@@ -47,6 +47,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "sheerun/vim-polyglot"
+  use "kyazdani42/nvim-web-devicons"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -59,6 +60,16 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
+  -- LSP 
+  use "williamboman/mason.nvim" -- simple to use language server installer
+  use "williamboman/mason-lspconfig.nvim" 
+  use "neovim/nvim-lspconfig" -- enable LSP
+  
+  -- Telescope 
+  use "nvim-telescope/telescope.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use "nvim-telescope/telescope-media-files.nvim"
+  use "kkharji/sqlite.lua"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

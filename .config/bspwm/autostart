@@ -1,6 +1,6 @@
-picom --experimental-backends &
+picom --experimental-backends -b
 feh --bg-fill /mnt/win2/Wallpapers/Minimalist/astro.jpeg /mnt/win2/Wallpapers/Minimalist/moon.png
-
+bspc monitor DP-0 -s DP-1
 
 if [ -e /tmp/first ]
 then
@@ -8,11 +8,9 @@ then
   telegram-desktop &
   discord &
   notion-app-enhanced &
-  numlockx &
-  bspc monitor DP-0 -s DP-1
-  conky &
   time_terminal_create.sh
   redshift &
+  xset r rate 300 50
 fi
 
 rm /tmp/first

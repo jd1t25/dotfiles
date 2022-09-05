@@ -58,30 +58,30 @@ endif
 
 
 " VIM_PLUG
-call plug#begin('~/.vim/plugged')
-
-  "Plug 'flazz/vim-colorschemes'
-  Plug 'frazrepo/vim-rainbow'
-  Plug 'tpope/vim-eunuch'
-  Plug 'sheerun/vim-polyglot'
-  "Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-  Plug 'wellle/targets.vim'
-  Plug 'tpope/vim-surround'
-  Plug 'psliwka/vim-smoothie'
-  Plug 'kovetskiy/sxhkd-vim'
-  Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
-  Plug 'ryanoasis/vim-devicons'
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'Raimondi/delimitMate'
-  Plug 'elkowar/yuck.vim'
-  Plug 'bhurlow/vim-parinfer'
-  Plug '907th/vim-auto-save'
-
-
-
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"
+"  "Plug 'flazz/vim-colorschemes'
+"  Plug 'frazrepo/vim-rainbow'
+"  Plug 'tpope/vim-eunuch'
+"  Plug 'sheerun/vim-polyglot'
+"  "Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+"  Plug 'wellle/targets.vim'
+"  Plug 'tpope/vim-surround'
+"  Plug 'psliwka/vim-smoothie'
+"  Plug 'kovetskiy/sxhkd-vim'
+"  Plug 'preservim/nerdtree' |
+"            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+"  Plug 'ryanoasis/vim-devicons'
+"  Plug 'tpope/vim-fugitive'
+"  Plug 'airblade/vim-gitgutter'
+"  Plug 'Raimondi/delimitMate'
+"  Plug 'elkowar/yuck.vim'
+"  Plug 'bhurlow/vim-parinfer'
+"  Plug '907th/vim-auto-save'
+"
+"
+"
+"call plug#end()
 
 
 " Rainbow 
