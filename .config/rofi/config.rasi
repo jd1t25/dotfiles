@@ -13,6 +13,7 @@ configuration {
     display-ssh: 					"";
     display-drun: 					"";
     display-combi: 					"";
+    monitor:                "primary";
 
     kb-row-up: "Up,k";
     kb-row-down: "Down,j";

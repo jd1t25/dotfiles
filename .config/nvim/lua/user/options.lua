@@ -32,7 +32,7 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
+--  guifont = "Cascadia Code:h12.0",               -- the font used in graphical neovim applications
 }
 
 vim.opt.shortmess:append "c"
@@ -48,3 +48,4 @@ vim.cmd([[
   syntax on
 ]])
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+vim.cmd [[ set cursorline ]]

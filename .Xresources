@@ -16,6 +16,7 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 
 !xcursor.theme: Vanilla-DMZ
+Xcursor.size: 28
 xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====

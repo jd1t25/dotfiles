@@ -8,9 +8,11 @@ CURRENT_SINK=$(pacmd stat | grep "Default sink name" | sed 's/.*: *//')
 	then
 		pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo
 		notify-send -t 2500 "Audio 2 Speaker" --icon="~/.icons/speaker.png"
+		bspc config focused_border_color '#80c484'
 	else
 		pactl set-default-sink alsa_output.usb-Conexant_CONEXANT_USB_AUDIO_000000000000-00.analog-stereo
 		notify-send -t 2500 "Audio 2 Headphones" --icon="~/.icons/headphones-solid.png"
+		bspc config focused_border_color '#8284cf'
 	fi
 
 if pgrep -f "python3 bin/pulse-volume-watcher.py" > /dev/null
@@ -19,4 +21,3 @@ then
 fi
 
 nohup bash -c 'bin/pulse-volume-watcher.py | xob' &> /dev/null &
-
