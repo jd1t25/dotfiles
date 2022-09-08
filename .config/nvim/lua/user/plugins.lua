@@ -63,9 +63,6 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim")
 	use("neovim/nvim-lspconfig") -- enable LSP
 
-	-- Copy/Paste
-	use("enricobacis/paste.vim")
-
 	-- Surround nvim
 	use({
 		"kylechui/nvim-surround",

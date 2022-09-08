@@ -71,12 +71,6 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Custom --
 
--- Copy Paste
-keymap("n", "<C-C>", "<cmd>:Copy<CR>", opts)
-keymap("i", "<C-C>", "<cmd>:Copy<CR>", opts)
-keymap("n", "<C-V>", "<cmd>:Paste<CR>", opts)
-keymap("i", "<C-V>", "<cmd>:Paste<CR>", opts)
-
 -- Delete instead of cut
 keymap("n", "dd", '"_dd', opts)
 keymap("v", "dd", '"_dd', opts)
