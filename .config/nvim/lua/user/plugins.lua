@@ -63,11 +63,23 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim")
 	use("neovim/nvim-lspconfig") -- enable LSP
 
+	-- Copy/Paste
+	use("enricobacis/paste.vim")
+
+	-- Surround nvim
+	use({
+		"kylechui/nvim-surround",
+		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+	})
+
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use("nvim-telescope/telescope-media-files.nvim")
 	use("kkharji/sqlite.lua")
+
+	-- Vim Move
+	use("matze/vim-move")
 
 	-- Null-ls
 	use("jose-elias-alvarez/null-ls.nvim")
@@ -93,6 +105,7 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
+	use("nvim-treesitter/nvim-treesitter-textobjects")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

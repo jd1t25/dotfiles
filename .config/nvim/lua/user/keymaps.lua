@@ -2,6 +2,8 @@ local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
 
+local nmap = { noremap = true }
+
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -32,6 +34,7 @@ keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
@@ -39,6 +42,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("n", "JK", "<cmd>:x<cr>", opts)
+keymap("n", "KJ", "<cmd>:q!<cr>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -66,9 +71,18 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Custom --
 
+-- Copy Paste
+keymap("n", "<C-C>", "<cmd>:Copy<CR>", opts)
+keymap("i", "<C-C>", "<cmd>:Copy<CR>", opts)
+keymap("n", "<C-V>", "<cmd>:Paste<CR>", opts)
+keymap("i", "<C-V>", "<cmd>:Paste<CR>", opts)
+
 -- Delete instead of cut
 keymap("n", "dd", '"_dd', opts)
 keymap("v", "dd", '"_dd', opts)
+
+-- Replace word with copy word
+-- keymap("n", "<leader>rr", "ciw<C-r>0<Esc>", opts)
 
 -- Telescope
 -- keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", opts)
@@ -81,4 +95,8 @@ keymap("n", "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 keymap("n", "<leader>km", "<cmd>Telescope keymaps<cr>", opts)
 
 -- ToggleTerm
-keymap("n", "<leader>tt", "<cmd>ToggleTerm hidden-true<cr>", opts)
+keymap("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
+keymap("t", "<esc>", [[<C-\><C-n>]], opts)
+keymap("t", "jk", "<cmd>:q<cr>", opts)
+keymap("n", "<leader>rr", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
+keymap("t", "<leader>rr", "<cmd><C-><C-n>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)

@@ -1,11 +1,12 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.telescope"
-require "user.cmp"
-require "user.lsp"
-require "user.fidget"
-require "user.gui"
-require "user.comment"
-require "user.null-ls"
+require("user.options")
+require("user.keymaps")
+require("user.plugins")
+require("user.colorscheme")
+require("user.telescope")
+require("user.cmp")
+require("user.lsp")
+require("user.fidget")
+require("user.gui")
+require("user.comment")
+require("user.null-ls")
+require("user.toggleterm")
