@@ -91,6 +91,6 @@ keymap("n", "<leader>km", "<cmd>Telescope keymaps<cr>", opts)
 -- ToggleTerm
 keymap("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
 keymap("t", "<esc>", [[<C-\><C-n>]], opts)
-keymap("t", "jk", "<cmd>:q<cr>", opts)
+keymap("t", "JK", "<cmd>:q<cr>", opts)
 keymap("n", "<leader>rr", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
 keymap("t", "<leader>rr", "<cmd><C-><C-n>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)

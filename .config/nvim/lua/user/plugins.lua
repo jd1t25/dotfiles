@@ -69,6 +69,21 @@ return packer.startup(function(use)
 		tag = "*", -- Use for stability; omit to use `main` branch for the latest features
 	})
 
+	-- Indent
+	use("lukas-reineke/indent-blankline.nvim")
+
+	-- Nvim Tree
+	use("kyazdani42/nvim-tree.lua")
+
+	-- Autoclose
+	use("m4xshen/autoclose.nvim")
+
+	-- Rainbow Brackets
+	use("p00f/nvim-ts-rainbow")
+
+	-- Nvim Colorizer
+	use("NvChad/nvim-colorizer.lua")
+
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
@@ -94,6 +109,12 @@ return packer.startup(function(use)
 
 	-- Fidget
 	use("j-hui/fidget.nvim")
+
+	-- Hop
+	use({
+		"phaazon/hop.nvim",
+		branch = "v2", -- optional but strongly recommended
+	})
 
 	-- Treesitter
 	use({

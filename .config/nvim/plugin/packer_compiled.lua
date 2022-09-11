@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["autoclose.nvim"] = {
+    loaded = true,
+    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
+    url = "https://github.com/m4xshen/autoclose.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -114,6 +119,16 @@ _G.packer_plugins = {
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/hop.nvim",
+    url = "https://github.com/phaazon/hop.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -134,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/NvChad/nvim-colorizer.lua"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -143,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -154,6 +179,11 @@ _G.packer_plugins = {
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -163,11 +193,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["paste.vim"] = {
-    loaded = true,
-    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/paste.vim",
-    url = "https://github.com/enricobacis/paste.vim"
   },
   ["plenary.nvim"] = {
     loaded = true,
