@@ -179,11 +179,6 @@ _G.packer_plugins = {
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
-    url = "https://github.com/p00f/nvim-ts-rainbow"
-  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/jd1t/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",

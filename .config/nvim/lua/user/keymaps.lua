@@ -42,7 +42,10 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("n", "JJ", "<cmd>:w<cr>", opts)
+keymap("i", "JJ", "<cmd>:w<cr>", opts)
 keymap("n", "JK", "<cmd>:x<cr>", opts)
+keymap("i", "JK", "<cmd>:x<cr>", opts)
 keymap("n", "KJ", "<cmd>:q!<cr>", opts)
 
 -- Visual --

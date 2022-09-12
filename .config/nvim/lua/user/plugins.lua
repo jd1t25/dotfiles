@@ -79,7 +79,7 @@ return packer.startup(function(use)
 	use("m4xshen/autoclose.nvim")
 
 	-- Rainbow Brackets
-	use("p00f/nvim-ts-rainbow")
+	-- use("p00f/nvim-ts-rainbow")
 
 	-- Nvim Colorizer
 	use("NvChad/nvim-colorizer.lua")

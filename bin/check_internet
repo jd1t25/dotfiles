@@ -1,0 +1,26 @@
+#!/bin/bash
+
+status=0
+
+do_on=("/home/user/bin/online.wav"
+       "We've connected")
+
+do_off=("/home/user/bin/offline.wav"
+        "Disconnected now")
+
+while [ 1 ] ;do
+    nc -zw 2 google.in 80
+    ret="$?"
+
+    if [ "$ret" = 0 -a "$status" = 0 ] ;then
+        # aplay ${do_on[0]}
+        notify-send ${do_on[1]}
+        status=1
+
+    elif [ "$ret" -ne 0 -a "$status" = 1 ] ;then
+        # aplay ${do_off[0]}
+        notify-send ${do_off[1]}
+        status=0 ;fi
+
+    sleep 2 ;done
+
