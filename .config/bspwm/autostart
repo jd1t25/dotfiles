@@ -14,7 +14,8 @@ then
   bspc config ignore_ewmh_focus true
   xfce4-power-manager &
   nohup bash -c "sleep 10; bspc config ignore_ewmh_focus false" &
+else
+  notify-send "WM Reloaded"
 fi
 
 rm /tmp/first
-notify-send "WM Reloaded"

@@ -1,4 +1,4 @@
-require("user.lsp.handlers")
-require("user.lsp.keymaps")
-require("lspconfig").pyright.setup({})
-require("user.lsp.lsp-install")
+require("user.lsp.mason")
+require("user.lsp.lsp-client")
+require("user.lsp.autocomplete")
+-- require("user.lsp.pylsp")

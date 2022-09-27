@@ -50,3 +50,4 @@ vim.cmd([[
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 vim.cmd([[ set cursorline ]])
 vim.cmd([[ let g:paste_no_mappings = 1 ]])
+vim.cmd([[ let g:move_key_modifier = 'A' ]])

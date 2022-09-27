@@ -118,6 +118,8 @@ alias sdl="song_downloader"
 alias btop="bpytop"
 alias sx="startx"
 
+alias pf="sudo pacman -Qe | grep"
+
 alias ll="exa -l -g --icons"
 alias ls="exa --icons"
 alias fp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"

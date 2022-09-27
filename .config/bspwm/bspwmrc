@@ -50,7 +50,7 @@ bspc rule -a notion-app-enhanced desktop='^6' follow=off
 bspc rule -a copyq state=floating hidden=on
 
 
-bspc rule -a time_terminal rectangle=400x250+0+0 state=floating center=true sticky=on --f hidden=on 
+bspc rule -a time_terminal rectangle=370x250+0+0 state=floating center=true sticky=on --f hidden=on 
 bspc rule -a task_manager rectangle=1200x700+0+0 state=floating center=true
 
 ### Startup 
@@ -58,3 +58,4 @@ bspc rule -a task_manager rectangle=1200x700+0+0 state=floating center=true
 #$HOME/bin/polybar.sh
 #$HOME/bin/multi_monitor_script
 $HOME/.config/bspwm/autostart
+$HOME/bin/volume-rocker
