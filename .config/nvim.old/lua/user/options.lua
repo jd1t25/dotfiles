@@ -4,7 +4,7 @@ local options = {
 	cmdheight = 2, -- more space in the neovim command line for displaying messages
 	completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 	conceallevel = 0, -- so that `` is visible in markdown files
-	-- fileencoding = "utf-8", -- the encoding written to a file
+	fileencoding = "utf-8", -- the encoding written to a file
 	hlsearch = true, -- highlight all matches on previous search pattern
 	ignorecase = true, -- ignore case in search patterns
 	mouse = "a", -- allow the mouse to be used in neovim
@@ -51,6 +51,3 @@ vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 vim.cmd([[ set cursorline ]])
 vim.cmd([[ let g:paste_no_mappings = 1 ]])
 vim.cmd([[ let g:move_key_modifier = 'A' ]])
-vim.cmd([[ 
-set fileencoding = "utf-8" 
-]])

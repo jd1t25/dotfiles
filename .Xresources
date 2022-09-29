@@ -21,7 +21,7 @@ xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====
 URxvt.scrollBar: off
-URxvt.font: xft:monospace:size=12
+! URxvt.font: xft:monospace:size=12
 URxvt.internalBorder:     22
 ! =================
 *background:	#1D1F28

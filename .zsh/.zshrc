@@ -164,3 +164,5 @@ zinit light spaceship-prompt/spaceship-prompt
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 #. torsocks on
+
+export LANG=en_US.UTF-8
