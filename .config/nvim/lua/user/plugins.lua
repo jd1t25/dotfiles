@@ -79,13 +79,13 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 
 	-- Indent
-	use("lukas-reineke/indent-blankline.nvim")
+	-- use("lukas-reineke/indent-blankline.nvim")
 
 	-- Nvim Tree
 	use("kyazdani42/nvim-tree.lua")
 
 	-- Autoclose
-	use("m4xshen/autoclose.nvim")
+	-- use("m4xshen/autoclose.nvim")
 
 	-- Rainbow Brackets
 	-- use("p00f/nvim-ts-rainbow")
