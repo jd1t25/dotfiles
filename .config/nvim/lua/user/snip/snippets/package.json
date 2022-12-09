@@ -40,25 +40,25 @@
   "contributes": {
     "snippets": [
       {
-        "language": "typescript",
-        "path": "./typescript.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./javascript.json"
-      },
-      {
-        "language": "jsonc",
-        "path": "./jsonc.json"
-      },
-      {
-        "language": "html",
-        "path": "./html.json"
-      },
-      {
-        "language": "dockerfile",
-        "path": "./dockerfile.json"
-      }
+      "language": "typescript",
+      "path": "./angular/typescript.json"
+    },
+    {
+      "language": "javascript",
+      "path": "./angular/javascript.json"
+    },
+    {
+      "language": "jsonc",
+      "path": "./angular/jsonc.json"
+    },
+    {
+      "language": "html",
+      "path": "./angular/html.json"
+    },
+    {
+      "language": "dockerfile",
+      "path": "./angular/dockerfile.json"
+    }  
     ]
   },
   "devDependencies": {
