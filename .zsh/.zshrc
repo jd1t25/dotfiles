@@ -16,6 +16,7 @@ setopt HIST_IGNORE_DUPS
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+fpath+=($HOME/.zsh/zsh-async)
 
 # Path to your oh-my-zsh installation.
 #export ZSH="/home/jd1t/.oh-my-zsh"
@@ -85,7 +86,10 @@ bindkey "\e[F" end-of-line
 
 #### SpaceShip ####
 SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_PROMPT_ASYNC=false
 SPACESHIP_PROMPT_PREFIXES_SHOW=false
+SPACESHIP_DIR_TRUNC_REPO=false
+SPACESHIP_RUBY_ASYNC=false
 SPACESHIP_NODE_SHOW=false
 SPACESHIP_JOBS_SHOW=false
 SPACESHIP_EXEC_TIME_SHOW=false
@@ -103,6 +107,7 @@ alias sxrc="v ~/.config/sxhkd/sxhkdrc"
 alias as="./bin/auto_scripter.sh"
 alias prc="v ~/.config/picom/picom.conf"
 alias krc="v ~/.config/kitty/kitty.conf"
+alias wrc="v ~/.config/waybar/config"
 #alias arc="v ~/.config/awesome/rc.lua"
 alias arc="v ~/.config/bspwm/autostart"
 alias pmx="pulsemixer"
@@ -134,6 +139,9 @@ alias -g '$= '
 # Created by `pipx` on 2021-05-19 06:37:44
 export PATH="$PATH:/home/jd1t/.local/bin"
 
+# Zsh async
+autoload -Uz async && async
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
@@ -156,6 +164,9 @@ zinit snippet OMZ::plugins/git/git.plugin.zsh
 zinit snippet OMZ::plugins/bgnotify/bgnotify.plugin.zsh
 zinit light zsh-users/zsh-autosuggestions 
 zinit load agkozak/zsh-z
+#zinit ice pick"async:zsh"
+#zinit load mafredi/zsh-async 
+#zinit load mafredri/zsh-async, from:"github", use:"async.zsh"
 zinit light spaceship-prompt/spaceship-prompt
 
 
