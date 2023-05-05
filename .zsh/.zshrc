@@ -1,7 +1,7 @@
 #### Startup
-echo "Hello jd1t"
-RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-RPS2=$RPS1
+#echo "Hello jd1t"
+#RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#RPS2=$RPS1
 
 
 
@@ -21,7 +21,7 @@ fpath+=($HOME/.zsh/zsh-async)
 # Path to your oh-my-zsh installation.
 #export ZSH="/home/jd1t/.oh-my-zsh"
 
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
 
 #plugins=(git bgnotify zsh-autosuggestions fast-syntax-highlighting autojump zsh-z)
 
@@ -85,14 +85,14 @@ bindkey "\e[F" end-of-line
 
 
 #### SpaceShip ####
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_PROMPT_ASYNC=false
-SPACESHIP_PROMPT_PREFIXES_SHOW=false
-SPACESHIP_DIR_TRUNC_REPO=false
-SPACESHIP_RUBY_ASYNC=false
-SPACESHIP_NODE_SHOW=false
-SPACESHIP_JOBS_SHOW=false
-SPACESHIP_EXEC_TIME_SHOW=false
+#SPACESHIP_PROMPT_SEPARATE_LINE=false
+#SPACESHIP_PROMPT_ASYNC=false
+#SPACESHIP_PROMPT_PREFIXES_SHOW=false
+#SPACESHIP_DIR_TRUNC_REPO=false
+#SPACESHIP_RUBY_ASYNC=false
+#SPACESHIP_NODE_SHOW=false
+#SPACESHIP_JOBS_SHOW=false
+#SPACESHIP_EXEC_TIME_SHOW=false
 
 export MANPATH="/usr/local/man:$MANPATH"
 
@@ -117,9 +117,8 @@ alias pos="v ~/bin/polybar_on_startup"
 alias guc="github-upload-cloud"
 alias hrc="v ~/.config/hypr/hyprland.conf"
 alias yeet="yay -Rsn"
-alias plt="yay -S --noconfirm"
+alias plt="echo -e 'archlinux' | yay -S --noconfirm"
 alias dig="sudo pacman -Qe | grep"
-alias sdl="song_downloader"
 alias btop="bpytop"
 alias sx="startx"
 
@@ -136,38 +135,40 @@ alias -g '$= '
 #alias lc='colorls -lA --sd'
 #alias ls='colorls'
 
+alias sdl="spotdl --output /mnt/win1/Music/New --format m4a " 
+
 # Created by `pipx` on 2021-05-19 06:37:44
 export PATH="$PATH:/home/jd1t/.local/bin"
 
 # Zsh async
-autoload -Uz async && async
+#autoload -Uz async && async
 
 ### Added by Zinit's installer
-if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
-    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
-    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
-        print -P "%F{33} %F{34}Installation successful.%f%b" || \
-        print -P "%F{160} The clone has failed.%f%b"
-fi
-
-source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-
+# if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+#     print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+#     command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+#     command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+#         print -P "%F{33} %F{34}Installation successful.%f%b" || \
+#         print -P "%F{160} The clone has failed.%f%b"
+# fi
+#
+# source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+# autoload -Uz _zinit
+# (( ${+_comps} )) && _comps[zinit]=_zinit
+#
 
 # Zinit Plugins
 
 
-zinit light zsh-users/zsh-syntax-highlighting
-zinit snippet OMZ::plugins/git/git.plugin.zsh
-zinit snippet OMZ::plugins/bgnotify/bgnotify.plugin.zsh
-zinit light zsh-users/zsh-autosuggestions 
-zinit load agkozak/zsh-z
+# zinit light zsh-users/zsh-syntax-highlighting
+# zinit snippet OMZ::plugins/git/git.plugin.zsh
+# zinit snippet OMZ::plugins/bgnotify/bgnotify.plugin.zsh
+# zinit light zsh-users/zsh-autosuggestions 
+# zinit load agkozak/zsh-z
 #zinit ice pick"async:zsh"
 #zinit load mafredi/zsh-async 
 #zinit load mafredri/zsh-async, from:"github", use:"async.zsh"
-zinit light spaceship-prompt/spaceship-prompt
+#zinit light spaceship-prompt/spaceship-prompt
 
 
 
@@ -177,3 +178,6 @@ zstyle ':completion:*' menu select
 #. torsocks on
 
 export LANG=en_US.UTF-8
+
+# Starship
+# eval "$(starship init zsh)"

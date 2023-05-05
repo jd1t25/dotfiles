@@ -13,6 +13,7 @@
 @define-color text #cdd6f4;
 @define-color subtext0 #a6adc8;
 @define-color subtext1 #bac2de;
+@define-color text2 #212121;
 
 @define-color surface0 rgba(22, 25, 37, 0.9);
 @define-color surface1 #45475a;
@@ -70,7 +71,7 @@
 #backlight,
 #clock,
 #battery,
-#cusotm-volume_icon,
+#custom-volume_icon,
 #pulseaudio,
 #network,
 #mpd,
@@ -250,6 +251,7 @@
   animation: gradient 15s ease infinite;
   font-weight: bold;
   color: #fff;
+  /* color: @text2; */
 }
 
 #custom-music.random {
@@ -260,6 +262,8 @@
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
   font-weight: bold;
   color: #fff;
+  /* color: @text2; */
+
 }
 
 #custom-music.critical {
@@ -270,6 +274,8 @@
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
   font-weight: bold;
   color: #fff;
+  /* color: @text2; */
+
 }
 
 #custom-music.Playing {
@@ -279,7 +285,7 @@
   animation: gradient_f 9s cubic-bezier(.72, .39, .21, 1) infinite;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
   font-weight: bold;
-  color: #fff;
+  color: #212121;
 }
 
 #custom-music.Paused,

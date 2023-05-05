@@ -2,6 +2,18 @@ require("telescope").setup({
 	defaults = {
 		-- Default configuration for telescope goes here:
 		-- config_key = value,
+		-- vimgrep_arguments = {
+  --     'rg',
+  --     '--color=never',
+  --     '--no-heading',
+  --     '--with-filename',
+  --     '--line-number',
+  --     '--column',
+  --     '--smart-case',
+  --     '--hidden',
+		-- 	'--glob=!git/*',
+		-- 	'--glob=!.rustup/*',
+  --   },
 		mappings = {
 			i = {
 				-- map actions.which_key to <C-h> (default: <C-/>)
@@ -16,6 +28,7 @@ require("telescope").setup({
 		},
 	},
 	pickers = {
+		-- find_command = "rg,--ignore,--hidden,--files prompt_prefix=🔍";
 		-- Default configuration for builtin pickers goes here:
 		-- picker_name = {
 		--   picker_config_key = value,
@@ -25,6 +38,10 @@ require("telescope").setup({
 		-- builtin picker
 	},
 	extensions = {
+		 -- fzy_native = {
+		 -- override_generic_sorter = false,
+		 -- override_file_sorter = true,
+        -- }
 		fzf = {
 			fuzzy = true, -- false will only do exact matching
 			override_generic_sorter = true, -- override the generic sorter
@@ -44,3 +61,4 @@ require("telescope").setup({
 -- load_extension, somewhere after setup function:
 require("telescope").load_extension("fzf")
 require("telescope").load_extension("media_files")
+-- require('telescope').load_extension('fzy_native')

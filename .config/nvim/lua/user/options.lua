@@ -4,7 +4,7 @@ local options = {
 	cmdheight = 2, -- more space in the neovim command line for displaying messages
 	completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 	conceallevel = 0, -- so that `` is visible in markdown files
-	-- fileencoding = "utf-8", -- the encoding written to a file
+	fileencoding = "utf-8", -- the encoding written to a file
 	hlsearch = true, -- highlight all matches on previous search pattern
 	ignorecase = true, -- ignore case in search patterns
 	mouse = "a", -- allow the mouse to be used in neovim
@@ -17,9 +17,10 @@ local options = {
 	splitright = true, -- force all vertical splits to go to the right of current window
 	swapfile = false, -- creates a swapfile
 	termguicolors = true, -- set term gui colors (most terminals support this)
-	timeoutlen = 1000, -- time to wait for a mapped sequence to complete (in milliseconds)
+	timeout = true,
+	timeoutlen = 300, -- time to wait for a mapped sequence to complete (in milliseconds)
 	undofile = true, -- enable persistent undo
-	updatetime = 300, -- faster completion (4000ms default)
+	updatetime = 250, -- faster completion (4000ms default)
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 	expandtab = true, -- convert tabs to spaces
 	shiftwidth = 2, -- the number of spaces inserted for each indentation
@@ -32,6 +33,8 @@ local options = {
 	wrap = false, -- display lines as one long line
 	scrolloff = 8, -- is one of my fav
 	sidescrolloff = 8,
+	-- loaded_netrw = 1, -- disable netrw at the very start
+	-- loaded_netrwPlugin = 1,
 	--  guifont = "Cascadia Code:h12.0",               -- the font used in graphical neovim applications
 }
 
@@ -51,6 +54,4 @@ vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work
 vim.cmd([[ set cursorline ]])
 vim.cmd([[ let g:paste_no_mappings = 1 ]])
 vim.cmd([[ let g:move_key_modifier = 'A' ]])
-vim.cmd([[ 
-set fileencoding = "utf-8" 
-]])
+vim.cmd [[cabbrev wq execute "Format sync" <bar> wq]]

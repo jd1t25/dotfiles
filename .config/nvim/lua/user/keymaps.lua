@@ -27,7 +27,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -83,17 +84,24 @@ keymap("v", "dd", '"_dd', opts)
 
 -- Telescope
 -- keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files({ find_command = {'rg', '--files', '--hidden', '-g', '!.git' }})<cr>", opts)
-keymap("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", opts)
-keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
-keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
-keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
-keymap("n", "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
-keymap("n", "<leader>km", "<cmd>Telescope keymaps<cr>", opts)
+-- keymap("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", opts)
+-- keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+-- keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
+-- keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts)
+-- keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", opts)
+-- keymap("n", "<leader>fc", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+-- keymap("n", "<leader>km", "<cmd>Telescope keymaps<cr>", opts)
 
 -- ToggleTerm
 keymap("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
 keymap("t", "<esc>", [[<C-\><C-n>]], opts)
 keymap("t", "JK", "<cmd>:q<cr>", opts)
-keymap("n", "<leader>rr", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
-keymap("t", "<leader>rr", "<cmd><C-><C-n>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
+keymap("n", "<C-Enter>", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
+-- keymap("t", "<leader>rr", "<cmd><C-\><C-n>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
+
+-- Source / Execute
+keymap("n","<leader>xx", "<cmd>source %<CR>",opts)
+
+-- Copy current line and Paste to next line
+keymap("n", "<A-J>", "<cmd>:t .<cr>",opts)
+keymap("i", "<A-J>", "<cmd>:t .<cr>",opts)

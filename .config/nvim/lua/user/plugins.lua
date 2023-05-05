@@ -64,6 +64,22 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim")
 	use("neovim/nvim-lspconfig") -- enable LSP
 
+	-- Nvim IDE 
+	use("ldelossa/nvim-ide") -- main ide plugin
+	use("rcarriga/nvim-notify") -- vim notification
+	use("dnlhc/glance.nvim") -- navigating and editing your LSP locations
+	use("lewis6991/gitsigns.nvim") --git decorations
+
+	-- Nvim Debugger 
+	use("mfussenegger/nvim-dap")
+	use("rcarriga/nvim-dap-ui")
+
+	-- fzf-lua
+	use { "ibhagwan/fzf-lua",
+  -- optional for icon support
+  requires = { "nvim-tree/nvim-web-devicons" }
+	}
+
 	-- Surround nvim
 	use({
 		"kylechui/nvim-surround",
@@ -95,7 +111,7 @@ return packer.startup(function(use)
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+	-- use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use("nvim-telescope/telescope-media-files.nvim")
 	use("kkharji/sqlite.lua")
 
@@ -113,11 +129,10 @@ return packer.startup(function(use)
 			require("toggleterm").setup()
 		end,
 	})
+
 	-- Comment
 	use("numToStr/Comment.nvim")
 
-	-- Fidget
-	use("j-hui/fidget.nvim")
 
 	-- Hop
 	use({
@@ -133,6 +148,10 @@ return packer.startup(function(use)
 		end,
 	})
 	use("nvim-treesitter/nvim-treesitter-textobjects")
+
+	-- Fidget
+	use("j-hui/fidget.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
