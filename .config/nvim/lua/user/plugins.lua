@@ -100,6 +100,9 @@ return packer.startup(function(use)
 	-- Nvim Tree
 	use("kyazdani42/nvim-tree.lua")
 
+	-- Autosave
+	use("Pocco81/auto-save.nvim")
+
 	-- Autoclose
 	-- use("m4xshen/autoclose.nvim")
 

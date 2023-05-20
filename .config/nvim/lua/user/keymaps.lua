@@ -45,8 +45,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("i", "jk", "<ESC>", opts)
 keymap("n", "JJ", "<cmd>:w<cr>", opts)
 keymap("i", "JJ", "<cmd>:w<cr>", opts)
-keymap("n", "JK", "<cmd>:x<cr>", opts)
-keymap("i", "JK", "<cmd>:x<cr>", opts)
+keymap("n", "JK", "<cmd>:qa!<cr>", opts)
+keymap("i", "JK", "<cmd>:qa!<cr>", opts)
 keymap("n", "KJ", "<cmd>:q!<cr>", opts)
 
 -- Visual --
@@ -98,7 +98,8 @@ keymap("v", "c", '"_c', opts)
 keymap("n", "<leader>tt", "<cmd>ToggleTerm<cr>", opts)
 keymap("t", "<esc>", [[<C-\><C-n>]], opts)
 keymap("t", "JK", "<cmd>:q<cr>", opts)
-keymap("n", "<C-Enter>", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
+keymap("n", "<C-Enter>", "<cmd>:TermExec cmd='python3 %'<cr>", nmap)
+-- keymap("n", "<C-Enter>", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
 -- keymap("t", "<leader>rr", "<cmd><C-\><C-n>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
 
 -- Source / Execute
