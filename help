@@ -6,6 +6,10 @@ stow -v .
 # Again in dotfiles dir
 stow --adopt -vt ~/.config .config
 
+# Packages 
+cat ~/dotfiles/backup/yay.bak | xargs yay -S --needed --noconfirm 2> yay.log
+
+
 
 ### mpvpaper
 #

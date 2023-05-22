@@ -115,7 +115,7 @@ require('lazy').setup({
   {'nvim-tree/nvim-tree.lua'},
 
   -- Autosave
-  {'okuuva/auto-save.nvim'},
+  -- {'okuuva/auto-save.nvim'},
 
   -- Format on Save
   {"lukas-reineke/lsp-format.nvim"},
