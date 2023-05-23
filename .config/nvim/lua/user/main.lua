@@ -37,7 +37,8 @@ require('lazy').setup({
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
-  { -- LSP Configuration & Plugins
+  {
+    -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs to stdpath for neovim
@@ -46,21 +47,24 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
     },
   },
 
-  { -- Autocompletion
+  {
+    -- Autocompletion
     'hrsh7th/nvim-cmp',
-    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' , 'rafamadriz/friendly-snippets'},
+    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip',
+      'rafamadriz/friendly-snippets' },
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
-  { -- Adds git releated signs to the gutter, as well as utilities for managing changes
+  { 'folke/which-key.nvim',         opts = {} },
+  {
+    -- Adds git releated signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
       -- See `:help gitsigns.txt`
@@ -95,7 +99,8 @@ require('lazy').setup({
   --   },
   -- },
 
-  { -- Add indentation guides even on blank lines
+  {
+    -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
@@ -106,25 +111,25 @@ require('lazy').setup({
   },
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim',        opts = {} },
 
   -- ToggleTerm
-  {'akinsho/toggleterm.nvim', version = "*", config = true},
+  { 'akinsho/toggleterm.nvim',      version = "*", config = true },
 
   -- NvimTree
-  {'nvim-tree/nvim-tree.lua'},
+  { 'nvim-tree/nvim-tree.lua' },
 
   -- Autosave
-  -- {'okuuva/auto-save.nvim'},
+  { 'okuuva/auto-save.nvim' },
 
   -- Format on Save
-  {"lukas-reineke/lsp-format.nvim"},
+  { "lukas-reineke/lsp-format.nvim" },
 
   -- Friendly Snippets
-  {'rafamadriz/friendly-snippets'},
+  { 'rafamadriz/friendly-snippets' },
 
   -- Lsp-format
-  {'lukas-reineke/lsp-format.nvim'},
+  -- {'lukas-reineke/lsp-format.nvim'},
 
   -- Surround nvim
   {
@@ -132,9 +137,9 @@ require('lazy').setup({
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
     end
   },
 
@@ -144,7 +149,7 @@ require('lazy').setup({
   -- Dashboard
   { 'goolord/alpha-nvim' },
 
-  -- Dev-Icons 
+  -- Dev-Icons
   { 'nvim-tree/nvim-web-devicons' },
 
   -- Autoclose
@@ -174,7 +179,8 @@ require('lazy').setup({
     'kkharji/sqlite.lua',
   },
 
-  { -- Highlight, edit, and navigate code
+  {
+    -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
@@ -423,6 +429,7 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
 
+  pylsp = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
