@@ -5,6 +5,8 @@ base-devel
 bash-completion
 bind
 bluez
+bpytop
+brave-bin
 btrfs-progs
 cairo
 chromium
@@ -68,8 +70,10 @@ neovim
 networkmanager
 ninja
 nm-connection-editor
+nodejs
 notion-app-enhanced
 noto-fonts
+npm
 ntfs-3g
 nvidia-dkms
 nvidia-settings
@@ -100,9 +104,11 @@ rsync
 rust
 sdl_ttf
 seatd
+spotify
 stow
 swaybg
 telegram-desktop
+tk
 traceroute
 ttf-anonymous-pro
 ttf-bitstream-vera
@@ -124,6 +130,7 @@ wayland-protocols
 wget
 wireplumber
 wl-clipboard
+wob
 wofi
 xcb-proto
 xcb-util
