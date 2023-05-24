@@ -122,6 +122,21 @@ require('lazy').setup({
   -- Autosave
   { 'okuuva/auto-save.nvim' },
 
+  -- Hop
+  { 'phaazon/hop.nvim' },
+
+  -- Trouble
+  { 'folke/trouble.nvim' },
+
+  -- Go-To
+  { 'rmagatti/goto-preview' },
+
+  -- Symbols Outline
+  { 'simrat39/symbols-outline.nvim' },
+
+  -- Specter (Search and Replace)
+  { 'nvim-pack/nvim-spectre' },
+
   -- Format on Save
   { "lukas-reineke/lsp-format.nvim" },
 

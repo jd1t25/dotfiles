@@ -102,9 +102,47 @@ keymap("n", "<C-Enter>", "<cmd>:TermExec cmd='python3 %'<cr>", nmap)
 -- keymap("n", "<C-Enter>", "<cmd>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
 -- keymap("t", "<leader>rr", "<cmd><C-\><C-n>:TermExec go_back=0 cmd='python3 %'<cr>", nmap)
 
+-- Trouble
+keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
+keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+keymap("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>", opts)
+keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", opts)
+
+-- Go To Preview
+keymap("n", "gpd", "require('goto-preview').goto_preview_definition()<CR>", opts)
+keymap("n", "gpt", "require('goto-preview').goto_preview_type_definition()<CR>", opts)
+keymap("n", "gpi", "require('goto-preview').goto_preview_implementation()<CR>", opts)
+keymap("n", "gP", "require('goto-preview').close_all_win()<CR>", opts)
+keymap("n", "gpr", "require('goto-preview').goto_preview_references()<CR>", opts)
+
+-- Symbols Outline
+keymap("n", "<leader>so", "<cmd>SymbolsOutline<cr>", opts)
+-- keymap("i", "<leader>so", "<cmd>SymbolsOutline<cr>", opts)
+
+-- Spectre (Search and Replace)
+vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").open()<CR>', {
+  desc = "Open Spectre"
+})
+vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
+  desc = "Search current word"
+})
+vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
+  desc = "Search current word"
+})
+vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
+  desc = "Search on current file"
+})
+
+-- Hop
+keymap("n", "<leader>hl", "<cmd>HopLine<cr>", opts)
+keymap("n", "<leader>hp", "<cmd>HopPattern<cr>", opts)
+keymap("n", "<leader>hw", "<cmd>HopWord<cr>", opts)
+keymap("n", "<leader>hc", "<cmd>HopChar1<cr>", opts)
+
 -- Source / Execute
-keymap("n","<leader>xx", "<cmd>source %<CR>",opts)
+keymap("n", "<leader>xx", "<cmd>source %<CR>", opts)
 
 -- Copy current line and Paste to next line
-keymap("n", "<A-J>", "<cmd>:t .<cr>",opts)
-keymap("i", "<A-J>", "<cmd>:t .<cr>",opts)
+keymap("n", "<A-J>", "<cmd>:t .<cr>", opts)
+keymap("i", "<A-J>", "<cmd>:t .<cr>", opts)
