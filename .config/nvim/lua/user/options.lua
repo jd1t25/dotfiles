@@ -55,3 +55,4 @@ vim.cmd([[ set cursorline ]])
 vim.cmd([[ let g:paste_no_mappings = 1 ]])
 vim.cmd([[ let g:move_key_modifier = 'A' ]])
 vim.cmd [[cabbrev wq execute "Format sync" <bar> wq]]
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

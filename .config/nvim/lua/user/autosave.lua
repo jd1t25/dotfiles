@@ -21,7 +21,7 @@ require("auto-save").setup {
     -- if set to `nil` then no specific condition is applied
     condition = nil,
     write_all_buffers = false, -- write all buffers when the current one meets `condition`
-    debounce_delay = 100,      -- delay after which a pending save is executed
+    debounce_delay = 1,        -- delay after which a pending save is executed
     callbacks = {              -- functions to be executed at different intervals
       -- before_saving = vim.cmd("Format"), -- ran before doing the actual save
     },

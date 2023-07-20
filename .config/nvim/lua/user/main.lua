@@ -125,6 +125,9 @@ require('lazy').setup({
   -- Hop
   { 'phaazon/hop.nvim' },
 
+  -- Formatter
+  { 'mhartington/formatter.nvim' },
+
   -- Trouble
   { 'folke/trouble.nvim' },
 

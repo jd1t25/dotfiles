@@ -136,6 +136,7 @@ alias -g '$= '
 #alias ls='colorls'
 
 alias sdl="spotdl --output /mnt/win1/Music/New --format m4a " 
+alias nv="env -u WAYLAND_DISPLAY neovide"
 
 # Created by `pipx` on 2021-05-19 06:37:44
 export PATH="$PATH:/home/jd1t/.local/bin"
