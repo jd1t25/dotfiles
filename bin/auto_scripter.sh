@@ -1,6 +1,6 @@
 #! /bin/bash
 
-FOLDER="bin"
+FOLDER="$HOME/dotfiles/bin"
 NAME=${1?Error: No name given to file}
 FILE="$FOLDER/$NAME"
 
