@@ -1,0 +1,17 @@
+{
+  "add books dialog dir": "/mnt/win2/Manga/Shadow Slave",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "database location dialog": "/mnt/win2/Manga/Calibre",
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "tablet",
+  "welcome_wizard_was_run": true
+}

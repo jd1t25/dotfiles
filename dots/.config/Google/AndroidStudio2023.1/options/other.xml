@@ -1,0 +1,72 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService">{
+  &quot;keyToString&quot;: {
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.FULL.AUTO_HIDE&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.FULL.LEFT&quot;: &quot;true&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.FULL.MINIMIZED&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.COMPONENT_TREE.FULL.SPLIT&quot;: &quot;true&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PALETTE.FULL.AUTO_HIDE&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PALETTE.FULL.LEFT&quot;: &quot;true&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PALETTE.FULL.MINIMIZED&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PALETTE.FULL.SPLIT&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PROPERTIES.FULL.AUTO_HIDE&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PROPERTIES.FULL.LEFT&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PROPERTIES.FULL.MINIMIZED&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.PROPERTIES.FULL.SPLIT&quot;: &quot;false&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.DEFAULT.NELE_EDITOR.TOOL_ORDER&quot;: &quot;PALETTE,PROPERTIES,COMPONENT_TREE&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.NELE_EDITOR.COMPONENT_TREE.FULL.LEFT&quot;: &quot;true&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.NELE_EDITOR.COMPONENT_TREE.FULL.SPLIT&quot;: &quot;true&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.NELE_EDITOR.PALETTE.FULL.LEFT&quot;: &quot;true&quot;,
+    &quot;ATTACHED_TOOL_WINDOW.NELE_EDITOR.TOOL_ORDER&quot;: &quot;PALETTE,PROPERTIES,COMPONENT_TREE&quot;,
+    &quot;MobileminApi&quot;: &quot;21&quot;,
+    &quot;NextRunPlatformUpdateBuild&quot;: &quot;AI-232.10227.8.2321.11479570&quot;,
+    &quot;NextRunPlatformUpdateVersion&quot;: &quot;Iguana | 2023.2.1&quot;,
+    &quot;NonModalCommitCustomization.IsApplied&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.test.framework.showIndexingAsTask&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.se.text.search&quot;: &quot;true&quot;,
+    &quot;SAVED_ANDROID_NPW_ASKED_LANGUAGE&quot;: &quot;true&quot;,
+    &quot;SAVED_ANDROID_NPW_LANGUAGE&quot;: &quot;Kotlin&quot;,
+    &quot;SAVED_ANDROID_PACKAGE&quot;: &quot;com.example&quot;,
+    &quot;Source Code Editor With PreviewLayout&quot;: &quot;Editor only&quot;,
+    &quot;android.sdk.path&quot;: &quot;/home/jd1t/Android/Sdk&quot;,
+    &quot;appcds.runOnSecondStart&quot;: &quot;AI-231.9392.1.2311.11255304-e19fa8ce646f38766f2f638affb6d001505043d378bf86d1f98bd5460517c6ad&quot;,
+    &quot;ask.about.ctrl.y.shortcut.v2&quot;: &quot;true&quot;,
+    &quot;build.toolwindow.Build Output.selection.state&quot;: &quot;com.intellij.build.BuildTreeConsoleView&quot;,
+    &quot;build.toolwindow.Sync.selection.state&quot;: &quot;com.intellij.build.BuildTreeConsoleView&quot;,
+    &quot;bundled.plugins.list.saved.version&quot;: &quot;AI-231.9392.1.2311.11255304&quot;,
+    &quot;experimental.ui.used.once&quot;: &quot;true&quot;,
+    &quot;file.gist.reindex.count&quot;: &quot;2&quot;,
+    &quot;fileTypeChangedCounter&quot;: &quot;1&quot;,
+    &quot;fontSizeToResetConsole&quot;: &quot;13.0&quot;,
+    &quot;fontSizeToResetEditor&quot;: &quot;13.0&quot;,
+    &quot;gotit.previous.run&quot;: &quot;AI-231.9392.1.2311.11255304&quot;,
+    &quot;ignore.essential-highlighting.mode&quot;: &quot;true&quot;,
+    &quot;input.method.disabler.muted&quot;: &quot;true&quot;,
+    &quot;installed.kotlin.plugin.version&quot;: &quot;231-1.9.22-release-704-AS9392.1.2311.11255304&quot;,
+    &quot;migrated.non.roamable.values.from.general.settings&quot;: &quot;true&quot;,
+    &quot;previousColorScheme&quot;: &quot;_@user_Dark&quot;,
+    &quot;registry.to.advanced.settings.migration.build&quot;: &quot;AI-231.9392.1.2311.11255304&quot;,
+    &quot;tasks.pass.word.conversion.enforced&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;fileTypeDetectors&quot;: [
+      &quot;com.intellij.ide.scratch.ScratchFileServiceImpl$Detector&quot;,
+      &quot;com.jetbrains.cidr.lang.OCHeaderFileTypeDetector&quot;,
+      &quot;com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector&quot;,
+      &quot;com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector&quot;,
+      &quot;org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector&quot;
+    ],
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;/home/jd1t/.gradle&quot;
+    ]
+  }
+}</component>
+  <component name="ShownTips"><![CDATA[{
+  "shownTips": {
+    "Kotlin_mix": 1710161745758
+  }
+}]]></component>
+</application>

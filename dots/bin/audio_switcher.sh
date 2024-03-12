@@ -5,15 +5,19 @@ speaker="alsa_output.pci-0000_00_1f.3.analog-stereo"
 
 CURRENT_SINK=$(pactl get-default-sink)
 
+BORDER_SCRIPT=~/bin/hypr_borders
+
 if [ "$CURRENT_SINK" == "$speaker" ]
 then
 	pactl set-default-sink $headphone
 	notify-send -t 2500 "Audio 2 Headphones" --icon="~/.icons/headphones-solid.png"
-	./bin/hypr_borders headphone
+	bash $BORDER_SCRIPT headphone
+	# ./bin/hypr_borders headphone
 else 
 	pactl set-default-sink $speaker 
 	notify-send -t 2500 "Audio 2 Speaker" --icon="~/.icons/speaker.png"
-	./bin/hypr_borders speaker
+	bash $BORDER_SCRIPT speaker
+	# ./bin/hypr_borders speaker
 fi
 
 # CURRENT_SINK=$(pacmd stat | grep "Default sink name" | sed 's/.*: *//')

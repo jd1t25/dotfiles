@@ -1,0 +1,85 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="Android.DeviceManager2">
+      <i c="7" l="1710162500253" />
+    </e>
+    <e n="Android.RunAndroidSdkManager">
+      <i c="2" l="1710163540336" />
+    </e>
+    <e n="CollectZippedLogs">
+      <i c="2" l="1710162654514" />
+    </e>
+    <e n="DeveloperServices.ConnectionAssistant">
+      <i c="2" l="1710161454063" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="12" l="1710161660238" />
+    </e>
+    <e n="EditorCopy">
+      <i c="5" l="1710165556445" />
+    </e>
+    <e n="LogDebugConfigure">
+      <i c="1" l="1710162668921" />
+    </e>
+    <e n="MoreRunToolbarActions">
+      <i c="5" l="1710161690819" />
+    </e>
+    <e n="RedesignedRunConfigurationSelector">
+      <i c="3" l="1710161866187" />
+    </e>
+    <e n="Run">
+      <i c="2" l="1710162502857" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="2" l="1710159420861" />
+    </e>
+    <e n="ShowLog">
+      <i c="2" l="1710162677411" />
+    </e>
+    <e n="ShowSettings">
+      <i c="1" l="1710159427700" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1705846335855" />
+    </e>
+    <e n="com.android.build.attribution.BuildAnalyzerNotificationManager$showAsNotification$1">
+      <i c="1" l="1710162516921" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.DeleteAction">
+      <i c="2" l="1710162290119" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.DeviceManagerPanel$toAnAction$2">
+      <i c="2" l="1710162292720" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.EditDeviceAction">
+      <i c="1" l="1710162245870" />
+    </e>
+    <e n="com.android.tools.idea.devicemanagerv2.ViewDetailsAction">
+      <i c="2" l="1710162237536" />
+    </e>
+    <e n="com.android.tools.idea.streaming.core.StreamingToolWindowManager$NewTabAction">
+      <i c="2" l="1710161798255" />
+    </e>
+    <e n="com.android.tools.idea.streaming.core.StreamingToolWindowManager$StartAvdAction">
+      <i c="2" l="1710161799325" />
+    </e>
+    <e n="com.intellij.execution.ExecutorRegistryImpl$RunSpecifiedConfigExecutorAction">
+      <i c="1" l="1710159572805" />
+    </e>
+    <e n="com.intellij.ide.actions.SettingsEntryPointAction$1">
+      <i c="1" l="1710159411030" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.DefaultActionGroup">
+      <i c="1" l="1710161483251" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="14" l="1710163536846" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1710162560652" />
+    </e>
+    <e n="performancePlugin.OpenIndexingDiagnosticsAction">
+      <i c="1" l="1710162640919" />
+    </e>
+  </component>
+</application>

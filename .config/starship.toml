@@ -1,9 +1,1 @@
-right_format = "$time"
-
-[time]
-disabled = false
-style = "bold bright-black"
-format = "[$time]($style)"
-
-[line_break]
-disabled = true
+../dotfiles/dots/.config/starship.toml
