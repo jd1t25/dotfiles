@@ -59,7 +59,9 @@ keymap("i", "JJ", "<cmd>:w<cr>", opts)
 keymap("n", "JK", "<cmd>:x<cr>", opts)
 keymap("i", "JK", "<cmd>:x<cr>", opts)
 keymap("i", "KK", "<cmd>:qa!<cr>", opts)
+keymap("n", "KK", "<cmd>:qa!<cr>", opts)
 keymap("n", "KJ", "<cmd>:q!<cr>", opts)
+keymap("i", "KJ", "<cmd>:q!<cr>", opts)
 
 -- Visual --
 -- Stay in indent mode

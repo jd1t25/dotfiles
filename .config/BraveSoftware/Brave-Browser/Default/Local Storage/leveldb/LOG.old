@@ -1,27 +1,13 @@
-2024/03/07-10:34:48.363 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2024/03/07-10:34:48.365 4 Recovering log #23
-2024/03/07-10:34:48.365 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000023.log 
-2024/03/07-10:35:49.596 4 Level-0 table #27: started
-2024/03/07-10:35:49.605 4 Level-0 table #27: 17346 bytes OK
-2024/03/07-10:35:49.607 4 Delete type=0 #23
-2024/03/07-12:12:49.596 4 Level-0 table #29: started
-2024/03/07-12:12:49.597 4 Level-0 table #29: 10905 bytes OK
-2024/03/07-12:12:49.599 4 Delete type=0 #26
-2024/03/07-12:12:49.599 4 Compacting 4@0 + 1@1 files
-2024/03/07-12:12:49.612 4 Generated table #30@0: 96 keys, 627498 bytes
-2024/03/07-12:12:49.612 4 Compacted 4@0 + 1@1 files => 627498 bytes
-2024/03/07-12:12:49.613 4 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/03/07-12:12:49.614 4 Delete type=2 #27
-2024/03/07-12:12:49.614 4 Delete type=2 #29
-2024/03/07-12:12:49.614 4 Delete type=2 #21
-2024/03/07-12:12:49.614 4 Delete type=2 #18
-2024/03/07-12:12:49.614 4 Delete type=2 #24
-2024/03/07-13:51:49.596 4 Level-0 table #32: started
-2024/03/07-13:51:49.599 4 Level-0 table #32: 10653 bytes OK
-2024/03/07-13:51:49.601 4 Delete type=0 #28
-2024/03/07-15:30:49.596 4 Level-0 table #34: started
-2024/03/07-15:30:49.601 4 Level-0 table #34: 10617 bytes OK
-2024/03/07-15:30:49.604 4 Delete type=0 #31
-2024/03/07-17:07:49.597 4 Level-0 table #36: started
-2024/03/07-17:07:49.601 4 Level-0 table #36: 10990 bytes OK
-2024/03/07-17:07:49.606 4 Delete type=0 #33
+2024/12/24-09:31:01.304 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2024/12/24-09:31:01.307 4 Recovering log #50
+2024/12/24-09:31:01.308 4 Level-0 table #54: started
+2024/12/24-09:31:01.309 4 Level-0 table #54: 58400 bytes OK
+2024/12/24-09:31:01.309 4 Recovering log #53
+2024/12/24-09:31:01.310 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000053.log 
+2024/12/24-09:31:01.311 4 Delete type=0 #50
+2024/12/24-09:32:09.596 5 Level-0 table #56: started
+2024/12/24-09:32:09.598 5 Level-0 table #56: 51681 bytes OK
+2024/12/24-09:32:09.599 5 Delete type=0 #53
+2024/12/24-09:37:58.834 5 Level-0 table #58: started
+2024/12/24-09:37:58.836 5 Level-0 table #58: 16695 bytes OK
+2024/12/24-09:37:58.838 5 Delete type=0 #55

@@ -1,53 +1,37 @@
-2024/03/11-16:20:51.775 e95a Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
-2024/03/11-16:20:51.776 e95a Recovering log #255
-2024/03/11-16:20:51.782 e95a Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000255.log 
-2024/03/11-16:21:09.166 e95b Level-0 table #261: started
-2024/03/11-16:21:09.195 e95b Level-0 table #261: 2823844 bytes OK
-2024/03/11-16:21:09.196 e95b Delete type=0 #255
-2024/03/11-16:21:09.748 e95b Level-0 table #263: started
-2024/03/11-16:21:09.767 e95b Level-0 table #263: 1685080 bytes OK
-2024/03/11-16:21:09.768 e95b Delete type=0 #260
-2024/03/11-16:21:12.811 e95b Level-0 table #265: started
-2024/03/11-16:21:12.827 e95b Level-0 table #265: 1521250 bytes OK
-2024/03/11-16:21:12.829 e95b Delete type=0 #262
-2024/03/11-16:21:12.829 e95b Compacting 4@0 + 3@1 files
-2024/03/11-16:21:12.858 e95b Generated table #266@0: 12 keys, 2120109 bytes
-2024/03/11-16:21:12.896 e95b Generated table #267@0: 7 keys, 2474446 bytes
-2024/03/11-16:21:12.913 e95b Generated table #268@0: 20 keys, 945385 bytes
-2024/03/11-16:21:12.913 e95b Compacted 4@0 + 3@1 files => 5539940 bytes
-2024/03/11-16:21:12.914 e95b compacted to: files[ 0 3 1 0 0 0 0 ]
-2024/03/11-16:21:12.915 e95b Delete type=2 #254
-2024/03/11-16:21:12.915 e95b Delete type=2 #261
-2024/03/11-16:21:12.915 e95b Delete type=2 #263
-2024/03/11-16:21:12.915 e95b Delete type=2 #258
-2024/03/11-16:21:12.915 e95b Delete type=2 #256
-2024/03/11-16:21:12.915 e95b Delete type=2 #265
-2024/03/11-16:21:12.915 e95b Delete type=2 #257
-2024/03/11-16:23:15.480 e95b Level-0 table #270: started
-2024/03/11-16:23:15.510 e95b Level-0 table #270: 3709190 bytes OK
-2024/03/11-16:23:15.512 e95b Delete type=0 #264
-2024/03/11-19:21:15.688 e95b Level-0 table #272: started
-2024/03/11-19:21:15.714 e95b Level-0 table #272: 2422957 bytes OK
-2024/03/11-19:21:15.717 e95b Delete type=0 #269
-2024/03/11-19:21:16.154 e95b Level-0 table #274: started
-2024/03/11-19:21:16.178 e95b Level-0 table #274: 1947684 bytes OK
-2024/03/11-19:21:16.180 e95b Delete type=0 #271
-2024/03/11-19:21:16.390 e95b Level-0 table #276: started
-2024/03/11-19:21:16.411 e95b Level-0 table #276: 1396217 bytes OK
-2024/03/11-19:21:16.412 e95b Delete type=0 #273
-2024/03/11-19:21:16.414 e95b Compacting 4@0 + 3@1 files
-2024/03/11-19:21:16.449 e95b Generated table #277@0: 12 keys, 2120117 bytes
-2024/03/11-19:21:16.484 e95b Generated table #278@0: 7 keys, 2474400 bytes
-2024/03/11-19:21:16.506 e95b Generated table #279@0: 20 keys, 945653 bytes
-2024/03/11-19:21:16.506 e95b Compacted 4@0 + 3@1 files => 5540170 bytes
-2024/03/11-19:21:16.507 e95b compacted to: files[ 0 3 1 0 0 0 0 ]
-2024/03/11-19:23:17.122 e95b Level-0 table #281: started
-2024/03/11-19:23:17.152 e95b Level-0 table #281: 3619478 bytes OK
-2024/03/11-19:23:17.154 e95b Delete type=2 #267
-2024/03/11-19:23:17.154 e95b Delete type=2 #274
-2024/03/11-19:23:17.154 e95b Delete type=2 #272
-2024/03/11-19:23:17.154 e95b Delete type=2 #276
-2024/03/11-19:23:17.154 e95b Delete type=2 #268
-2024/03/11-19:23:17.154 e95b Delete type=2 #266
-2024/03/11-19:23:17.154 e95b Delete type=2 #270
-2024/03/11-19:23:17.154 e95b Delete type=0 #275
+2024/12/24-09:38:38.852 9ea0f Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2024/12/24-09:38:38.853 9ea0f Recovering log #325
+2024/12/24-09:38:38.853 9ea0f Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000325.log 
+2024/12/24-10:40:18.779 9ea11 Level-0 table #329: started
+2024/12/24-10:40:18.807 9ea11 Level-0 table #329: 6506117 bytes OK
+2024/12/24-10:40:18.808 9ea11 Delete type=0 #325
+2024/12/24-10:40:18.810 9ea11 Compacting 4@0 + 4@1 files
+2024/12/24-10:40:18.819 9ea11 Generated table #330@0: 8 keys, 2392942 bytes
+2024/12/24-10:40:18.832 9ea11 Generated table #331@0: 10 keys, 2765529 bytes
+2024/12/24-10:40:18.841 9ea11 Generated table #332@0: 7 keys, 2730285 bytes
+2024/12/24-10:40:18.888 9ea11 Generated table #333@0: 3 keys, 4657263 bytes
+2024/12/24-10:40:18.893 9ea11 Generated table #334@0: 19 keys, 1144129 bytes
+2024/12/24-10:40:18.893 9ea11 Compacted 4@0 + 4@1 files => 13690148 bytes
+2024/12/24-10:40:18.894 9ea11 compacted to: files[ 0 5 1 0 0 0 0 ]
+2024/12/24-10:40:18.894 9ea11 Delete type=2 #320
+2024/12/24-10:40:18.894 9ea11 Delete type=2 #326
+2024/12/24-10:40:18.895 9ea11 Delete type=2 #318
+2024/12/24-10:40:18.895 9ea11 Delete type=2 #323
+2024/12/24-10:40:18.895 9ea11 Delete type=2 #329
+2024/12/24-10:40:18.895 9ea11 Delete type=2 #315
+2024/12/24-10:40:18.895 9ea11 Delete type=2 #317
+2024/12/24-10:40:18.895 9ea11 Delete type=2 #316
+2024/12/24-10:40:18.899 9ea11 Expanding@1 1+1 (2392942+2109317 bytes) to 5+1 (13690148+2109317 bytes)
+2024/12/24-10:40:18.899 9ea11 Compacting 5@1 + 1@2 files
+2024/12/24-10:40:18.910 9ea11 Generated table #335@1: 8 keys, 2392942 bytes
+2024/12/24-10:40:18.920 9ea11 Generated table #336@1: 8 keys, 2765461 bytes
+2024/12/24-10:40:18.930 9ea11 Generated table #337@1: 6 keys, 2730270 bytes
+2024/12/24-10:40:18.957 9ea11 Generated table #338@1: 2 keys, 4657234 bytes
+2024/12/24-10:40:18.961 9ea11 Generated table #339@1: 15 keys, 1144191 bytes
+2024/12/24-10:40:18.961 9ea11 Compacted 5@1 + 1@2 files => 13690098 bytes
+2024/12/24-10:40:18.962 9ea11 compacted to: files[ 0 0 5 0 0 0 0 ]
+2024/12/24-10:40:18.962 9ea11 Delete type=2 #334
+2024/12/24-10:40:18.962 9ea11 Delete type=2 #331
+2024/12/24-10:40:18.962 9ea11 Delete type=2 #330
+2024/12/24-10:40:18.962 9ea11 Delete type=2 #333
+2024/12/24-10:40:18.962 9ea11 Delete type=2 #332
+2024/12/24-10:40:18.962 9ea11 Delete type=2 #5

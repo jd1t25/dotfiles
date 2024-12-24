@@ -1,15 +1,16 @@
-2024/03/11-16:20:51.048 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2024/03/11-16:20:51.050 4 Recovering log #35
-2024/03/11-16:20:51.051 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000035.log 
-2024/03/11-16:39:07.696 4 Level-0 table #39: started
-2024/03/11-16:39:07.710 4 Level-0 table #39: 180839 bytes OK
-2024/03/11-16:39:07.715 4 Delete type=0 #35
-2024/03/11-16:39:07.716 4 Compacting 4@0 + 1@1 files
-2024/03/11-16:39:07.748 4 Generated table #40@0: 99 keys, 666989 bytes
-2024/03/11-16:39:07.748 4 Compacted 4@0 + 1@1 files => 666989 bytes
-2024/03/11-16:39:07.749 4 compacted to: files[ 0 1 1 0 0 0 0 ]
-2024/03/11-16:39:07.750 4 Delete type=2 #32
-2024/03/11-16:39:07.750 4 Delete type=2 #34
-2024/03/11-16:39:07.751 4 Delete type=2 #36
-2024/03/11-16:39:07.751 4 Delete type=2 #30
-2024/03/11-16:39:07.751 4 Delete type=2 #39
+2024/12/24-09:38:38.560 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2024/12/24-09:38:38.564 4 Recovering log #57
+2024/12/24-09:38:38.564 4 Level-0 table #60: started
+2024/12/24-09:38:38.565 4 Level-0 table #60: 9752 bytes OK
+2024/12/24-09:38:38.565 4 Recovering log #59
+2024/12/24-09:38:38.565 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000059.log 
+2024/12/24-09:38:38.567 4 Delete type=0 #57
+2024/12/24-09:38:38.567 5 Compacting 4@0 + 1@1 files
+2024/12/24-09:38:38.577 5 Generated table #61@0: 177 keys, 796874 bytes
+2024/12/24-09:38:38.577 5 Compacted 4@0 + 1@1 files => 796874 bytes
+2024/12/24-09:38:38.578 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/12/24-09:38:38.579 5 Delete type=2 #56
+2024/12/24-09:38:38.579 5 Delete type=2 #52
+2024/12/24-09:38:38.579 5 Delete type=2 #60
+2024/12/24-09:38:38.579 5 Delete type=2 #58
+2024/12/24-09:38:38.579 5 Delete type=2 #54

@@ -9,8 +9,8 @@ local options = {
 	hlsearch = true, -- highlight all matches on previous search pattern
 	ignorecase = true, -- ignore case in search patterns
 	inccommand = "split", -- Preview substitutions live, as you type!
-	list = true, -- sets neovim display whitespace
-	listchars = { tab = "» ", trail = "·", nbsp = "␣" }, -- shows different symbols for whitespace
+	-- list = true, -- sets neovim display whitespace
+	-- listchars = { tab = "» ", trail = "·", nbsp = "␣" }, -- shows different symbols for whitespace
 	mouse = "a", -- allow the mouse to be used in neovim
 	pumheight = 10, -- pop up menu height
 	showmode = true, -- we don't need to see things like -- INSERT -- anymore

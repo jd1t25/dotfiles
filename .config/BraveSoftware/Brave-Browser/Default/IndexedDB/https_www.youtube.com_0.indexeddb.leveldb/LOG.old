@@ -1,2 +1,66 @@
-2024/02/02-14:05:11.200 df6 Creating DB /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb since it was missing.
-2024/02/02-14:05:11.202 df6 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/24-00:50:41.611 2cffc Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/24-00:50:41.611 2cffc Recovering log #4
+2024/12/24-00:50:41.617 2cffc Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2024/12/24-01:06:12.820 2cffd Level-0 table #8: started
+2024/12/24-01:06:12.827 2cffd Level-0 table #8: 1624604 bytes OK
+2024/12/24-01:06:12.828 2cffd Delete type=0 #4
+2024/12/24-01:30:30.242 2cffd Compacting 1@1 + 1@2 files
+2024/12/24-01:30:30.250 2cffd Generated table #9@1: 427 keys, 55739 bytes
+2024/12/24-01:30:30.250 2cffd Compacted 1@1 + 1@2 files => 55739 bytes
+2024/12/24-01:30:30.251 2cffd compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:30:30.251 2cffd Delete type=2 #5
+2024/12/24-01:30:30.251 2cffd Delete type=2 #8
+2024/12/24-01:33:54.650 2cffd Level-0 table #11: started
+2024/12/24-01:33:54.657 2cffd Level-0 table #11: 1203177 bytes OK
+2024/12/24-01:33:54.658 2cffd Delete type=0 #7
+2024/12/24-01:34:40.075 2cffc Compacting 1@1 + 1@2 files
+2024/12/24-01:34:40.078 2cffc Generated table #12@1: 416 keys, 63295 bytes
+2024/12/24-01:34:40.078 2cffc Compacted 1@1 + 1@2 files => 63295 bytes
+2024/12/24-01:34:40.079 2cffc compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:34:40.080 2cffc Delete type=2 #11
+2024/12/24-01:34:40.080 2cffc Delete type=2 #9
+2024/12/24-01:37:32.012 2cffd Level-0 table #14: started
+2024/12/24-01:37:32.018 2cffd Level-0 table #14: 1073423 bytes OK
+2024/12/24-01:37:32.019 2cffd Delete type=0 #10
+2024/12/24-01:39:03.511 2cffc Compacting 1@1 + 1@2 files
+2024/12/24-01:39:03.514 2cffc Generated table #15@1: 439 keys, 66221 bytes
+2024/12/24-01:39:03.514 2cffc Compacted 1@1 + 1@2 files => 66221 bytes
+2024/12/24-01:39:03.515 2cffc compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:39:03.515 2cffc Delete type=2 #12
+2024/12/24-01:39:03.515 2cffc Delete type=2 #14
+2024/12/24-01:41:46.058 2cffd Level-0 table #17: started
+2024/12/24-01:41:46.064 2cffd Level-0 table #17: 1103748 bytes OK
+2024/12/24-01:41:46.066 2cffd Delete type=0 #13
+2024/12/24-01:42:38.681 2cffe Compacting 1@1 + 1@2 files
+2024/12/24-01:42:38.685 2cffe Generated table #18@1: 469 keys, 66125 bytes
+2024/12/24-01:42:38.685 2cffe Compacted 1@1 + 1@2 files => 66125 bytes
+2024/12/24-01:42:38.685 2cffe compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:42:38.686 2cffe Delete type=2 #17
+2024/12/24-01:42:38.686 2cffe Delete type=2 #15
+2024/12/24-01:45:26.148 2cffd Level-0 table #20: started
+2024/12/24-01:45:26.155 2cffd Level-0 table #20: 1066517 bytes OK
+2024/12/24-01:45:26.156 2cffd Delete type=0 #16
+2024/12/24-01:46:45.382 2cffc Compacting 1@1 + 1@2 files
+2024/12/24-01:46:45.386 2cffc Generated table #21@1: 498 keys, 68025 bytes
+2024/12/24-01:46:45.386 2cffc Compacted 1@1 + 1@2 files => 68025 bytes
+2024/12/24-01:46:45.387 2cffc compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:46:45.387 2cffc Delete type=2 #20
+2024/12/24-01:46:45.387 2cffc Delete type=2 #18
+2024/12/24-01:48:23.819 2cffd Level-0 table #23: started
+2024/12/24-01:48:23.826 2cffd Level-0 table #23: 1069982 bytes OK
+2024/12/24-01:48:23.828 2cffd Delete type=0 #19
+2024/12/24-01:49:32.441 2cffe Compacting 1@1 + 1@2 files
+2024/12/24-01:49:32.446 2cffe Generated table #24@1: 527 keys, 70657 bytes
+2024/12/24-01:49:32.446 2cffe Compacted 1@1 + 1@2 files => 70657 bytes
+2024/12/24-01:49:32.447 2cffe compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:49:32.447 2cffe Delete type=2 #21
+2024/12/24-01:49:32.447 2cffe Delete type=2 #23
+2024/12/24-01:51:44.185 2cffd Level-0 table #26: started
+2024/12/24-01:51:44.192 2cffd Level-0 table #26: 1087129 bytes OK
+2024/12/24-01:51:44.194 2cffd Delete type=0 #22
+2024/12/24-01:53:29.892 2cffd Compacting 1@1 + 1@2 files
+2024/12/24-01:53:29.896 2cffd Generated table #27@1: 558 keys, 72955 bytes
+2024/12/24-01:53:29.896 2cffd Compacted 1@1 + 1@2 files => 72955 bytes
+2024/12/24-01:53:29.897 2cffd compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/24-01:53:29.897 2cffd Delete type=2 #24
+2024/12/24-01:53:29.897 2cffd Delete type=2 #26

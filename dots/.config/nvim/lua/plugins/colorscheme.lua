@@ -1,12 +1,32 @@
-return { 
-  "nyoom-engineering/oxocarbon.nvim",
-   lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      -- Load the colorscheme here
-      vim.opt.background = "dark"
-      vim.cmd.colorscheme 'oxocarbon'
-      -- You can configure highlights by doing something like
-      --vim.cmd.hi 'Comment gui=none'
-    end,
-} 
+return {
+	-- {
+	-- 	"ntk148v/habamax.nvim",
+	-- 	dependencies = { "rktjmp/lush.nvim" },
+	-- 	config = function()
+	-- 		vim.cmd("colorscheme habamax.nvim")
+	-- 	end,
+	-- },
+	"echasnovski/mini.base16",
+	config = function()
+		require("mini.base16").setup({
+			palette = {
+				base00 = "#151515",
+				base01 = "#1F1F1F",
+				base02 = "#2E2E2E",
+				base03 = "#424242",
+				base04 = "#BBB6B6",
+				base05 = "#E8E3E3",
+				base06 = "#E8E3E3",
+				base07 = "#E8E3E3",
+				base08 = "#B66467",
+				base09 = "#D9BC8C",
+				base0A = "#D9BC8C",
+				base0B = "#8C977D",
+				base0C = "#8AA6A2",
+				base0D = "#8DA3B9",
+				base0E = "#A988B0",
+				base0F = "#BBB6B6",
+			},
+		})
+	end,
+}
