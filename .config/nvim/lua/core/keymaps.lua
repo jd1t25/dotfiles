@@ -48,8 +48,10 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+-- keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<Tab>", ":bnext<CR>", opts)
+-- keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<S-Tab>", ":bprevious<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -101,6 +103,9 @@ keymap("v", "c", '"_c', opts)
 -- Copy current line and Paste to next line
 keymap({ "n", "i" }, "<A-J>", "<cmd>:t .<cr>", opts)
 --keymap("i", "<A-J>", "<cmd>:t .<cr>", opts)
+
+-- Comment in Visual Mode
+keymap("v", ".", "gcc", opts)
 
 -- nvim-tree
 -- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)

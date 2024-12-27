@@ -1,13 +1,21 @@
-2024/12/24-09:31:01.304 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2024/12/24-09:31:01.307 4 Recovering log #50
-2024/12/24-09:31:01.308 4 Level-0 table #54: started
-2024/12/24-09:31:01.309 4 Level-0 table #54: 58400 bytes OK
-2024/12/24-09:31:01.309 4 Recovering log #53
-2024/12/24-09:31:01.310 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000053.log 
-2024/12/24-09:31:01.311 4 Delete type=0 #50
-2024/12/24-09:32:09.596 5 Level-0 table #56: started
-2024/12/24-09:32:09.598 5 Level-0 table #56: 51681 bytes OK
-2024/12/24-09:32:09.599 5 Delete type=0 #53
-2024/12/24-09:37:58.834 5 Level-0 table #58: started
-2024/12/24-09:37:58.836 5 Level-0 table #58: 16695 bytes OK
-2024/12/24-09:37:58.838 5 Delete type=0 #55
+2024/12/26-10:02:13.821 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2024/12/26-10:02:13.824 4 Recovering log #62
+2024/12/26-10:02:13.825 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000062.log 
+2024/12/26-10:52:47.697 5 Level-0 table #66: started
+2024/12/26-10:52:47.699 5 Level-0 table #66: 12059 bytes OK
+2024/12/26-10:52:47.700 5 Delete type=0 #62
+2024/12/26-17:14:12.475 5 Level-0 table #68: started
+2024/12/26-17:14:12.476 5 Level-0 table #68: 11735 bytes OK
+2024/12/26-17:14:12.478 5 Delete type=0 #65
+2024/12/26-18:18:28.774 5 Level-0 table #70: started
+2024/12/26-18:18:28.776 5 Level-0 table #70: 11984 bytes OK
+2024/12/26-18:18:28.777 5 Delete type=0 #67
+2024/12/26-18:18:28.777 5 Compacting 4@0 + 1@1 files
+2024/12/26-18:18:28.791 5 Generated table #71@0: 198 keys, 797994 bytes
+2024/12/26-18:18:28.791 5 Compacted 4@0 + 1@1 files => 797994 bytes
+2024/12/26-18:18:28.792 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/12/26-18:18:28.793 5 Delete type=2 #61
+2024/12/26-18:18:28.793 5 Delete type=2 #70
+2024/12/26-18:18:28.793 5 Delete type=2 #63
+2024/12/26-18:18:28.793 5 Delete type=2 #66
+2024/12/26-18:18:28.793 5 Delete type=2 #68

@@ -1,3 +1,24 @@
-2024/12/24-09:31:01.373 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
-2024/12/24-09:31:01.373 4 Recovering log #7
-2024/12/24-09:31:01.373 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000007.log 
+2024/12/26-10:02:14.384 4 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2024/12/26-10:02:14.385 4 Recovering log #10
+2024/12/26-10:02:14.385 4 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000010.log 
+2024/12/26-10:20:47.967 5 Level-0 table #14: started
+2024/12/26-10:20:47.968 5 Level-0 table #14: 28390 bytes OK
+2024/12/26-10:20:47.969 5 Delete type=0 #10
+2024/12/26-11:11:13.933 5 Level-0 table #16: started
+2024/12/26-11:11:13.935 5 Level-0 table #16: 26157 bytes OK
+2024/12/26-11:11:13.936 5 Delete type=0 #13
+2024/12/26-12:31:17.481 5 Level-0 table #18: started
+2024/12/26-12:31:17.483 5 Level-0 table #18: 24611 bytes OK
+2024/12/26-12:31:17.485 5 Delete type=0 #15
+2024/12/26-12:31:17.485 5 Compacting 4@0 + 1@1 files
+2024/12/26-12:31:17.487 5 Generated table #19@0: 1145 keys, 57129 bytes
+2024/12/26-12:31:17.487 5 Compacted 4@0 + 1@1 files => 57129 bytes
+2024/12/26-12:31:17.488 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/12/26-12:31:17.488 5 Delete type=2 #14
+2024/12/26-12:31:17.488 5 Delete type=2 #16
+2024/12/26-12:31:17.488 5 Delete type=2 #18
+2024/12/26-12:31:17.488 5 Delete type=2 #11
+2024/12/26-12:31:17.488 5 Delete type=2 #8
+2024/12/26-19:48:52.477 5 Level-0 table #21: started
+2024/12/26-19:48:52.479 5 Level-0 table #21: 36575 bytes OK
+2024/12/26-19:48:52.480 5 Delete type=0 #17

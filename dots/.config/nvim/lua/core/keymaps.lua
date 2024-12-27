@@ -104,6 +104,9 @@ keymap("v", "c", '"_c', opts)
 keymap({ "n", "i" }, "<A-J>", "<cmd>:t .<cr>", opts)
 --keymap("i", "<A-J>", "<cmd>:t .<cr>", opts)
 
+-- Comment in Visual Mode
+keymap("v", ".", "gcc", opts)
+
 -- nvim-tree
 -- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 

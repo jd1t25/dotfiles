@@ -4,7 +4,7 @@ return {
 	dependencies = "rafamadriz/friendly-snippets",
 	version = "*",
 	opts = {
-		keymap = { preset = "default" },
+		keymap = { preset = "default", ["<C-u>"] = { "select_and_accept", "fallback" } },
 		appearance = {
 			use_nvim_cmp_as_default = true,
 			nerd_font_variant = "mono",
@@ -25,6 +25,7 @@ return {
 			menu = {
 				-- Don't automatically show the completion menu
 				auto_show = true,
+				border = "single",
 
 				-- nvim-cmp style menu
 				draw = {
@@ -36,7 +37,7 @@ return {
 			},
 
 			-- Show documentation when selecting a completion item
-			documentation = { auto_show = true, auto_show_delay_ms = 500 },
+			documentation = { auto_show = true, auto_show_delay_ms = 500, window = { border = "single" } },
 
 			-- Display a preview of the selected item on the current line
 			ghost_text = { enabled = false },
@@ -46,6 +47,6 @@ return {
 			cmdline = {},
 		},
 		-- Experimental signature help support
-		signature = { enabled = true },
+		signature = { enabled = true, window = { border = "single" } },
 	},
 }

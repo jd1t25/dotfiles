@@ -7,7 +7,7 @@ return {
 		require("mini.surround").setup({
 			custom_surroundings = nil,
 
-			highlight_duration = 500,
+			highlight_duration = 1000,
 
 			-- Module mappings. Use `''` (empty string) to disable one.
 			mappings = {
@@ -170,13 +170,12 @@ return {
 		})
 		require("mini.tabline").setup({
 			show_icons = true,
-			format = nil,
 			set_vim_settings = true,
 			tabpage_section = "left",
 		})
 		require("mini.trailspace").setup()
 	end,
 	keys = {
-		{ "<leader>e", "<cmd>lua MiniFiles.open()<cr>", desc = "Mini Files" },
+		{ "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<cr>", desc = "Mini Files" },
 	},
 }

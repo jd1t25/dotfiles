@@ -4,7 +4,30 @@ return {
 		-- ai
 		require("mini.ai").setup({ n_lines = 500 })
 
-		require("mini.surround").setup()
+		require("mini.surround").setup({
+			custom_surroundings = nil,
+
+			highlight_duration = 1000,
+
+			-- Module mappings. Use `''` (empty string) to disable one.
+			mappings = {
+				add = "sa", -- Add surrounding in Normal and Visual modes
+				delete = "sd", -- Delete surrounding
+				find = "sf", -- Find surrounding (to the right)
+				find_left = "sF", -- Find surrounding (to the left)
+				highlight = "sh", -- Highlight surrounding
+				replace = "sr", -- Replace surrounding
+				update_n_lines = "sn", -- Update `n_lines`
+
+				suffix_last = "l", -- Suffix to search with "prev" method
+				suffix_next = "n", -- Suffix to search with "next" method
+			},
+
+			n_lines = 20,
+			respect_selection_type = false,
+			search_method = "cover",
+			silent = false,
+		})
 
 		-- require("mini.splitjoin").setup()
 
@@ -147,13 +170,12 @@ return {
 		})
 		require("mini.tabline").setup({
 			show_icons = true,
-			format = nil,
 			set_vim_settings = true,
 			tabpage_section = "left",
 		})
 		require("mini.trailspace").setup()
 	end,
 	keys = {
-		{ "<leader>e", "<cmd>lua MiniFiles.open()<cr>", desc = "Mini Files" },
+		{ "<leader>e", "<cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<cr>", desc = "Mini Files" },
 	},
 }
