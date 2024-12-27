@@ -1,6 +1,0 @@
-2024/01/21-19:43:38.517 3468 Reusing MANIFEST /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/01/21-19:43:38.517 3468 Recovering log #4
-2024/01/21-19:43:38.524 3468 Reusing old log /home/jd1t/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000004.log 
-2024/01/21-19:44:00.935 3469 Level-0 table #8: started
-2024/01/21-19:44:00.955 3469 Level-0 table #8: 2575414 bytes OK
-2024/01/21-19:44:00.958 3469 Delete type=0 #4
