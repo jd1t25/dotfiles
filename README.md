@@ -1,1 +1,1 @@
-#### Set up by someone who definitely knows what they’re doing... sort of.
+#### Set up by someone who definitely knows what he's doing... sort of.
