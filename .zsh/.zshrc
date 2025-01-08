@@ -22,6 +22,13 @@ export MANPATH="/usr/local/man:$MANPATH"
 # Created by `pipx` on 2021-05-19 06:37:44
 export PATH="$PATH:/home/jd1t/.local/bin"
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 
 source ~/.zsh/alias.zsh

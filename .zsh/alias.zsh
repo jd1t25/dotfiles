@@ -40,3 +40,4 @@ alias -g '$= '
 
 alias sdl="spotdl --output /mnt/win1/Music/New --format m4a " 
 alias nv="env -u WAYLAND_DISPLAY neovide"
+alias tl="teams-for-linux"
